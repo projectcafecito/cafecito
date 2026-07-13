@@ -1,0 +1,11 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+export async function getStaticPaths() { return (await getCollection('docs')).map((entry) => ({ params: { slug: entry.slug }, props: { entry } })); }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const title = entry.slug.split('-').map((part) => part[0].toUpperCase() + part.slice(1)).join(' ');
+---
+<BaseLayout title={`${title} | Project Cafecito`}><Nav /><main class="content-shell"><article><div class="content-prose"><Content /></div></article></main><Footer /></BaseLayout>

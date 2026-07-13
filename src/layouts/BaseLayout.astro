@@ -1,0 +1,45 @@
+---
+import '../styles/common.css';
+import '../styles/content.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  keywords?: string;
+}
+
+const {
+  title,
+  description = 'Project Cafecito builds practical AI tools for small business.',
+  image = 'https://cafecito.tech/images/cafecito-banner.png',
+  keywords,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/images/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

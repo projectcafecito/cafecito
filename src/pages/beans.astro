@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const features = [
+  ['📡 Scale & Coverage', 'Fresh content from over 7,000 news and blog publishers, updated daily. We handle the full aggregation pipeline so you get clean, structured data without any crawling or maintenance overhead.'],
+  ['🧠 Semantic Search', 'Natural language vector-based semantic search with tunable accuracy. Go beyond keywords — ask questions in plain text and pull deeply relevant articles from thousands of sources. Ideal for powering AI agents, RAG systems, and intelligent automation workflows.'],
+  ['🔍 Intelligent Filtering', 'Rich, multi-dimensional filtering by categories, named entities, geographic regions, content types, sources, and time ranges. Designed for precise control while remaining simple to use in real AI and analytics workflows.'],
+  ['📈 Trend Scoring', 'Every article is automatically scored and ranked based on real social engagement signals. Surface what’s actually gaining traction instead of just the most recent content.'],
+  ['🏷️ Built-in AI Enrichment', 'Automatic extraction of named entities, sentiment, topics, and regions for every article. Ready for analytics dashboards, AI agents, and downstream pipelines — no extra processing layers required.'],
+  ['🔗 Story Propagation Mapping', 'Automatically links related articles across thousands of publishers. Track how stories spread from niche sources to mainstream outlets and observe narrative shifts in real time.'],
+];
+---
+
+<BaseLayout
+  title="Beans API & MCP | Project Cafecito"
+  description="Curated news and blogs with semantic search, rich filtering, and clean JSON endpoints."
+  image="https://cafecito.tech/images/beans-banner.png"
+  keywords="Beans API, news API, blog API, vector search, MCP, Project Cafecito"
+>
+  <Nav />
+  <header class="hero" id="what-is-beans">
+    <div class="container">
+      <section class="hero-frame hero-frame--beans">
+        <article class="hero-copy">
+          <p class="eyebrow">Project Cafecito / Beans</p>
+          <h1>News &amp; Blogs API</h1>
+          <p>Beans is our aggregation and search service for news and blogs. It supports semantic query search, practical filtering, and clean JSON output. Think of it as your content firehose with better manners.</p>
+          <div class="hero-badges">
+            <span class="shared-badge">MCP</span><span class="shared-badge">JSON</span><span class="shared-badge">Vector</span><span class="shared-badge">Free Tier</span><span class="shared-badge shared-badge--ghost-mint">v0.8 | New Capabilities</span>
+          </div>
+        </article>
+      </section>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section" id="why-beans">
+      <div class="section-title"><h2>Why Beans</h2></div>
+      <div class="grid">{features.map(([title, text]) => <article class="card shared-panel"><h3>{title}</h3><p>{text}</p></article>)}</div>
+    </section>
+    <section class="section" id="get-beans">
+      <div class="section-title"><h2>Get Started</h2></div>
+      <div class="products products--no-media">
+        <article class="product shared-panel shared-panel--interactive">
+          <a class="product-link-overlay" href="https://developer.cafecito.tech/howtos/beans-howto" aria-label="Open Beans API"></a>
+          <div><span class="tag shared-badge shared-badge--mint">Live</span><h3>🔌 API &amp; MCP</h3><p>Full endpoint reference, authentication, filtering, and examples. Ready to integrate Beans into your app or agent.</p></div>
+        </article>
+        <article class="product shared-panel">
+          <div><span class="tag shared-badge shared-badge--subtle reviving-badge">Reviving soon</span><h3>🌐 Web</h3><p>RSS feed reader on steroids. Search, filter, and explore trends without touching a single API call.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
