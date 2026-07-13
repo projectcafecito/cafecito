@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Espresso by Project Cafecito: curated business intelligence suite with API, publications, event digests, synthesized signals, and MCP-friendly workflows.">
+    <meta name="keywords" content="Espresso API, business intelligence, market intelligence, event digests, signals, MCP, Project Cafecito">
+    <meta property="og:title" content="Espresso | Project Cafecito">
+    <meta property="og:description" content="Curated business intelligence — API, publications, event digests, and synthesized signals for dashboards, monitoring, and AI agents.">
+    <meta property="og:image" content="https://cafecito.tech/images/espresso-banner.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Espresso | Project Cafecito">
+    <meta name="twitter:description" content="Concentrated shots of structured intelligence for teams that want signal, not noise.">
+    <meta name="twitter:image" content="https://cafecito.tech/images/espresso-banner.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Espresso | Project Cafecito</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .hero-badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .hero-badges .shared-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.38rem 0.72rem;
+            border: 1px solid rgba(236, 218, 191, 0.52);
+            background: linear-gradient(145deg, rgba(41, 31, 24, 0.92), rgba(24, 17, 13, 0.92));
+            color: rgba(250, 244, 233, 0.96);
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.24);
+        }
+
+        .hero-badges .shared-badge--ghost-mint {
+            border-color: rgba(104, 218, 211, 0.5);
+            background: linear-gradient(145deg, rgba(18, 36, 34, 0.9), rgba(13, 25, 24, 0.9));
+            box-shadow: 0 5px 14px rgba(7, 32, 30, 0.28);
+        }
+
+        .hero-badges .icon-badge {
+            width: 16px;
+            height: 16px;
+            stroke-width: 2;
+            flex-shrink: 0;
+        }
+
+        .product-heading-with-icon {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .heading-favicon {
+            width: 1.25em;
+            height: 1.25em;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container top-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="images/cafecito.png" alt="Project Cafecito logo">
+                <span>Project Cafecito</span>
+            </a>
+            <button class="hamburger navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle menu">
+                ☰
+            </button>
+            <div class="nav-links" id="site-nav">
+                <a class="nav-pill" href="index.html#products">Products</a>
+                <a class="nav-pill" href="https://developer.cafecito.tech">API</a>
+                <a class="nav-pill" href="index.html#about">About</a>
+                <a class="nav-pill" href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml"><i data-lucide="message-square" class="icon-badge" aria-hidden="true"></i>Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-top mobile-nav-drawer" tabindex="-1" id="mobile-nav" aria-labelledby="mobile-nav-label">
+        <div class="mobile-nav-header">
+            <h2 id="mobile-nav-label">Menu</h2>
+            <button class="mobile-nav-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close menu">✕</button>
+        </div>
+        <div class="mobile-nav-body">
+            <a class="nav-pill" href="index.html#products">Products</a>
+            <a class="nav-pill" href="https://developer.cafecito.tech">API</a>
+            <a class="nav-pill" href="index.html#about">About</a>
+            <a class="nav-pill" href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml"><i data-lucide="message-square" class="icon-badge" aria-hidden="true"></i>Contact</a>
+        </div>
+    </div>
+
+    <header class="hero" id="what-is-espresso">
+        <div class="container">
+            <section class="hero-frame hero-frame--espresso">
+                <article class="hero-copy">
+                    <p class="eyebrow">Project Cafecito / Espresso</p>
+                    <h1>Business Intelligence Suite</h1>
+                    <p>
+                        Espresso is part of a larger product suite that includes the Espresso API and Espresso Publications
+                        (editorials, X, Threads) — curated digests and deeper human-readable analysis built on the same
+                        high-signal intelligence layer. Think of it as concentrated shots of structured intelligence:
+                        event digests, synthesized signals, tags, and relationships — served fresh for dashboards,
+                        monitoring workflows, and AI agents.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge shared-badge shared-badge--subtle"><i data-lucide="bot" class="icon-badge" aria-hidden="true"></i>MCP</span>
+                        <span class="badge shared-badge shared-badge--subtle"><i data-lucide="braces" class="icon-badge" aria-hidden="true"></i>JSON</span>
+                        <span class="badge shared-badge shared-badge--subtle"><i data-lucide="search" class="icon-badge" aria-hidden="true"></i>Semantic Search</span>
+                        <span class="badge shared-badge shared-badge--subtle"><i data-lucide="zap" class="icon-badge" aria-hidden="true"></i>Events &amp; Signals</span>
+                        <span class="badge shared-badge shared-badge--ghost-mint">v0.1 | Live</span>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" id="why-espresso">
+            <div class="section-title">
+                <h2>Why Espresso</h2>
+            </div>
+            <div class="grid">
+                <article class="card shared-panel">
+                    <h3>☕ Curated Intelligence</h3>
+                    <p>
+                        Event and signal sips — structured digests distilled from the noise.
+                        Get briefing-ready intelligence instead of wading through a raw news firehose.
+                    </p>
+                </article>
+
+                <article class="card shared-panel">
+                    <h3>🧠 Semantic Search</h3>
+                    <p>
+                        Natural-language queries with a tunable similarity threshold.
+                        Ask questions in plain text and pull deeply relevant events and signals
+                        for AI agents, RAG systems, and monitoring workflows.
+                    </p>
+                </article>
+
+                <article class="card shared-panel">
+                    <h3>🏷️ Tag Filtering</h3>
+                    <p>
+                        AND-filter events and signals by topics, domains, regions, and entities.
+                        Combine tags with date ranges for precise, repeatable intelligence pulls.
+                    </p>
+                </article>
+
+                <article class="card shared-panel">
+                    <h3>🔗 Relationship Graph</h3>
+                    <p>
+                        Traverse <code>same_as</code> and <code>derived_from</code> links between related sips.
+                        Follow how events connect to downstream signals and equivalent records across the graph.
+                    </p>
+                </article>
+
+                <article class="card shared-panel">
+                    <h3>🤖 MCP-Friendly</h3>
+                    <p>
+                        Return structured JSON or flat plain text with <code>response_type=text</code>.
+                        Lower token cost for MCP tools and LLM workflows that do not need JSON syntax.
+                    </p>
+                </article>
+
+                <article class="card shared-panel">
+                    <h3>📰 Publications Layer</h3>
+                    <p>
+                        Human-readable editorials and social digests on the same intelligence stack.
+                        Read curated analysis on the web, X, and Threads — or wire the API into your own tools.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="get-espresso">
+            <div class="section-title">
+                <h2>Get Started</h2>
+            </div>
+            <div class="products products--no-media">
+                <article class="product shared-panel shared-panel--interactive product--clickable">
+                    <a class="product-link-overlay" href="https://developer.cafecito.tech/howtos/espresso-howto" aria-label="Open Espresso API"></a>
+                    <div>
+                        <span class="tag shared-badge shared-badge--mint">Live</span>
+                        <h3>🔌 API &amp; MCP</h3>
+                        <p>
+                            Full endpoint reference, authentication, filtering, and examples.
+                            Ready to integrate Espresso into your app or agent.
+                        </p>
+                    </div>
+                </article>
+                <article class="product shared-panel shared-panel--interactive product--clickable">
+                    <a class="product-link-overlay" href="https://espresso.cafecito.tech" aria-label="Open Espresso Publications"></a>
+                    <div>
+                        <span class="tag shared-badge shared-badge--mint">Live</span>
+                        <h3>📰 Publications</h3>
+                        <p>
+                            Curated editorials and digests on the web.
+                            Deeper human-readable analysis built on the same intelligence layer.
+                        </p>
+                    </div>
+                </article>
+                <article class="product shared-panel shared-panel--interactive product--clickable">
+                    <a class="product-link-overlay" href="https://x.com/espressovibz" aria-label="Open Espresso on X"></a>
+                    <div>
+                        <span class="tag shared-badge shared-badge--mint">Live</span>
+                        <h3 class="product-heading-with-icon">
+                            <img src="https://x.com/favicon.ico" alt="" class="heading-favicon" width="22" height="22" loading="lazy" decoding="async">
+                            X
+                        </h3>
+                        <p>
+                            Daily shots of curated insights on tech, startups, and market trends.
+                            Follow for concentrated intelligence in your feed.
+                        </p>
+                    </div>
+                </article>
+                <article class="product shared-panel shared-panel--interactive product--clickable">
+                    <a class="product-link-overlay" href="https://www.threads.com/@espresso.sips" aria-label="Open Espresso on Threads"></a>
+                    <div>
+                        <span class="tag shared-badge shared-badge--mint">Live</span>
+                        <h3 class="product-heading-with-icon">
+                            <img src="https://static.cdninstagram.com/rsrc.php/y4/r/pctUncuduBn.svg" alt="" class="heading-favicon" width="22" height="22" loading="lazy" decoding="async">
+                            Threads
+                        </h3>
+                        <p>
+                            Short-form digests and signal highlights on Threads.
+                            Same high-signal layer, served for casual reading.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>© 2024-2026 Project Cafecito. All Rights Reserved.</div>
+        <div class="site-footer-links">
+            <a href="docs/terms-of-use.md">Terms</a>
+            <a href="docs/privacy-policy.md">Privacy</a>
+            <a href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="nav-offcanvas.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
