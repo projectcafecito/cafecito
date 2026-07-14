@@ -1,7 +1,6 @@
 ---
 const home = Astro.url.pathname === '/';
 const productUrl = home ? '#products' : '/#products';
-const aboutUrl = home ? '#about' : '/#about';
 ---
 
 <nav class="top-nav">
@@ -11,20 +10,31 @@ const aboutUrl = home ? '#about' : '/#about';
       <span>Project Cafecito</span>
     </a>
     <details class="mobile-menu">
-      <summary aria-label="Open navigation">☰</summary>
+      <summary aria-label="Open navigation">Menu</summary>
       <div class="mobile-menu-links">
-        <a href={productUrl}>Products</a>        
-        <a href="https://developer.cafecito.tech">APIs & MCPs</a>
+        <a href={productUrl}>Products</a>
+        <a href="https://developer.cafecito.tech">APIs &amp; MCPs</a>
         <a href="/blogs/">Blogs</a>
-        <a href={aboutUrl}>Company</a>
+        <a href="/docs/overview/">Overview</a>
+        <a href="/docs/about-us/">About us</a>
+        <a href="/docs/terms-of-use/">Terms of Use</a>
+        <a href="/docs/privacy-policy/">Privacy Policy</a>
         <a href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact</a>
       </div>
     </details>
     <div class="nav-links">
       <a class="nav-pill" href={productUrl}>Products</a>
-      <a class="nav-pill" href="https://developer.cafecito.tech">APIs & MCPs</a>
-      <a class="nav-pill" href="/blogs/">Blogs</a>      
-      <a class="nav-pill" href={aboutUrl}>Company</a>
+      <a class="nav-pill" href="https://developer.cafecito.tech">APIs &amp; MCPs</a>
+      <a class="nav-pill" href="/blogs/">Blogs</a>
+      <details class="company-menu">
+        <summary class="nav-pill">Company</summary>
+        <div class="company-menu-links">
+          <a href="/docs/overview/">Overview</a>
+          <a href="/docs/about-us/">About us</a>
+          <a href="/docs/terms-of-use/">Terms of Use</a>
+          <a href="/docs/privacy-policy/">Privacy Policy</a>
+        </div>
+      </details>
       <a class="nav-pill" href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact</a>
     </div>
   </div>

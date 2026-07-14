@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
-  title="Project Cafecito | Coffee-Fueled AI Products"
-  description="Project Cafecito builds coffee-fueled AI products for news intelligence, market analysis, social automation, and medical billing workflows."
+  title="Project Cafecito"
+  description="Project Cafecito builds AI products for news intelligence, market analysis, social automation, and medical billing workflows."
   keywords="AI automation, news API, market intelligence, social media automation, medical billing automation, Project Cafecito"
 >
   <Nav />
@@ -15,10 +15,9 @@ import Footer from '../components/Footer.astro';
       <section class="hero-frame hero-frame--cafecito" role="img" aria-label="Coffee and AI visual for Project Cafecito">
         <article class="hero-copy">
           <p class="eyebrow">Practical AI &amp; Tools for Small Business</p>
-          <h1>Automation for Business Owners</h1>
-          <h4>Who'd rather do real work instead of mind-numbing admin.</h4>
-          <p>We build simple, API-first AI tools and workflows that eliminate repetitive back-office tasks for small and micro businesses. No bloated platforms — just practical systems that ship fast, drink coffee with you, and free you to focus on the work you actually enjoy. Automation that fits your caffeine budget and chaos tolerance.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#products">See Product Lineup</a><a class="btn btn-secondary" href="https://developer.cafecito.tech">Dive Into API</a></div>
+          <h1>Automation for business owners who would rather do real work.</h1>
+          <p>We build simple, API-first AI tools and workflows that eliminate repetitive back-office tasks for small and micro businesses. No bloated platforms - just practical systems that ship fast and fit your caffeine budget and chaos tolerance.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#products">Explore products</a><a class="btn btn-secondary" href="https://developer.cafecito.tech">Explore APIs</a></div>
         </article>
       </section>
     </div>
@@ -26,36 +25,43 @@ import Footer from '../components/Footer.astro';
   <main>
     <section class="section section--spacious" id="products">
       <div class="container">
-        <div class="section-title"><h2>Products</h2><p>Yes, these are real. No, we still cannot fix your printer.</p></div>
+        <div class="section-title"><h2>Products</h2><p>Practical tools for the work behind the work.</p></div>
         <div class="products">
-          <a class="product shared-panel shared-panel--interactive" href="/beans/"><img class="product-icon" src="/images/beans.png" alt="Beans product icon" /><div><span class="tag shared-badge shared-badge--caramel">News API</span><h3>Beans</h3><p>News &amp; blog aggregator API with semantic search, smart filters, and MCP support — so your AI workflows stay fed with relevant information, not noise.</p></div></a>
-          <a class="product shared-panel shared-panel--interactive" href="/espresso/"><img class="product-icon" src="/images/espresso.png" alt="Espresso product icon" /><div><span class="tag shared-badge shared-badge--caramel">Intelligence</span><h3>Espresso</h3><p>Curated business intelligence suite — API, publications, and social digests with event signals, tags, and relationships for dashboards and AI agents.</p></div></a>
-          <article class="product shared-panel"><img class="product-icon" src="/images/cortado.png" alt="Cortado product icon" /><div><span class="tag shared-badge shared-badge--caramel">Social Automation</span><h3>Cortado</h3><p>Social media automation that keeps your posting consistent, campaigns clean, and your manual wrangling to a minimum.</p></div></article>
-          <article class="product shared-panel"><img class="product-icon" src="/images/medicafe.png" alt="MediCafe product icon" /><div><span class="tag shared-badge shared-badge--caramel">Medical Ops</span><h3>MediCafe</h3><p>Medical billing automation that reduces claim denials, paperwork friction, and the operational headaches that eat into your practice time.</p></div></article>
+          <a class="product shared-panel shared-panel--interactive" href="/beans/"><img class="product-icon" src="/images/beans.png" alt="Beans product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--mint">Live</span><span class="tag shared-badge shared-badge--caramel">News API</span></div><h3>Beans</h3><p>News &amp; blog aggregator API with semantic search, smart filters, and MCP support - so your AI workflows stay fed with relevant information, not noise.</p></div></a>
+          <a class="product shared-panel shared-panel--interactive" href="/espresso/"><img class="product-icon" src="/images/espresso.png" alt="Espresso product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--mint">Live</span><span class="tag shared-badge shared-badge--caramel">Intelligence</span></div><h3>Espresso</h3><p>Curated business intelligence suite - API, publications, and social digests with event signals, tags, and relationships for dashboards and AI agents.</p></div></a>
+          <article class="product shared-panel"><img class="product-icon" src="/images/cortado.png" alt="Cortado product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--subtle">In development</span><span class="tag shared-badge shared-badge--caramel">Social Automation</span></div><h3>Cortado</h3><p>Social media automation that keeps your posting consistent, campaigns clean, and your manual wrangling to a minimum.</p></div></article>
+          <article class="product shared-panel"><img class="product-icon" src="/images/medicafe.png" alt="MediCafe product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--subtle">In development</span><span class="tag shared-badge shared-badge--caramel">Medical Ops</span></div><h3>MediCafe</h3><p>Medical billing automation that reduces claim denials, paperwork friction, and the operational headaches that eat into your practice time.</p></div></article>
         </div>
       </div>
     </section>
-    <section class="section section--spacious" id="about">
+    <section class="section section--spacious" id="why-cafecito">
       <div class="container">
-        <article class="about-copy">
-          <p class="eyebrow">Meet the founders</p>
-          <h2>Built by operators who got tired of busywork.</h2>
-          <p class="about-lead">Project Cafecito is run by two tech-industry veterans who kept seeing the same problem: too much repetitive work and not enough time for the meaningful stuff. We are bootstrapped, experimental, and aggressively practical.</p>
-          <div class="founder-grid">
-            <section class="founder-card">
-              <h3>Soumit Salman Rahman</h3>
-              <p class="founder-role">Computer engineer · Cybersecurity · Applied AI</p>
-              <p>Soumit has built secure, large-scale computing platforms and AI-enabled systems across Microsoft, Dropbox, and Aurora Innovation. He brings product, engineering, and security experience to Cafecito’s practical automation stack.</p>
-              <div class="link-row"><a class="mini-link" href="https://www.linkedin.com/in/soumitsrahman/">LinkedIn</a><a class="mini-link" href="https://medium.com/@soumitsr">Writing</a></div>
-            </section>
-            <section class="founder-card">
-              <h3>Daniel Oliver Vidaud</h3>
-              <p class="founder-role">Aerospace engineer · Operations · Organizational change</p>
-              <p>Daniel has led complex product and operational integrations from aerospace to consulting. He specializes in the small, counter-intuitive changes that create durable improvements across organizations.</p>
-              <div class="link-row"><a class="mini-link" href="https://www.linkedin.com/in/dvidaud/">LinkedIn</a><a class="mini-link" href="https://personalizedtransformations.com/blog/">Writing</a></div>
-            </section>
+        <div class="section-title"><h2>Why Cafecito</h2><p>Less busywork. More useful software.</p></div>
+        <div class="proof-grid">
+          <article class="proof-card shared-panel"><h3>Practical by default</h3><p>We focus on the repetitive work that slows down small teams and independent operators.</p></article>
+          <article class="proof-card shared-panel"><h3>API-first tools</h3><p>Our products are designed to fit into existing workflows, dashboards, and AI agents.</p></article>
+          <article class="proof-card shared-panel"><h3>Bootstrapped and focused</h3><p>We keep the products lean, experimental, and cost-conscious as they grow.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section section--spacious">
+      <div class="container">
+        <article class="founder-signal shared-panel">
+          <img src="/images/about-us.png" alt="Illustration of Project Cafecito founders" />
+          <div>
+            <p class="eyebrow">A small team with practical experience</p>
+            <h2>Built by operators who got tired of busywork.</h2>
+            <p>Project Cafecito is run by two technology and operations veterans who build tools for the work behind the work. Learn how the founders think, what the company does, and where the products are headed.</p>
+            <div class="about-actions"><a class="btn btn-primary" href="/docs/about-us/">Meet the founders</a><a class="btn btn-secondary" href="/docs/overview/">Our company</a></div>
           </div>
-          <div class="about-actions"><a class="btn btn-primary" href="/docs/about-us/">Our full story</a><a class="btn btn-secondary" href="/blogs/">Company updates</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="section section--spacious">
+      <div class="container">
+        <article class="closing-cta shared-panel">
+          <div><p class="eyebrow">Ready when you are</p><h2>Find the tool that fits your workflow.</h2><p>Explore the product lineup, read what we are building, or get in touch with the team.</p></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="#products">Explore products</a><a class="btn btn-secondary" href="/blogs/">Read updates</a><a class="btn btn-secondary" href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact us</a></div>
         </article>
       </div>
     </section>

@@ -103,6 +103,6 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 ## Contact Information
 
-If you have any questions about this Privacy Policy, please contact us through our [contact page](#).
+If you have any questions about this Privacy Policy, please [contact the team through GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
 
 By continuing to use Espresso, you acknowledge that you have read, understood, and agree to this Privacy Policy.

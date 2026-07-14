@@ -104,6 +104,44 @@ a:hover {
     background: rgba(234, 216, 191, 0.12);
 }
 
+.company-menu {
+    position: relative;
+}
+
+.company-menu summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.company-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.company-menu-links {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 0;
+    width: 14rem;
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.65rem;
+    background: rgba(18, 11, 7, 0.98);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 15px 30px var(--shadow);
+}
+
+.company-menu-links a {
+    padding: 0.48rem 0.55rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+}
+
+.company-menu-links a:hover {
+    background: rgba(245, 239, 229, 0.1);
+    text-decoration: none;
+}
+
 .hamburger {
     display: none; /* Hidden by default on larger screens */
     align-items: center;

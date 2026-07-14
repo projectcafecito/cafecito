@@ -2,11 +2,11 @@
 
 **Effective Date:** September 16, 2024
 
-**Espresso** is a service provided by **Project Cafecito**, a project under **Strategic Implementation Advising, LLC**. By accessing or using this website, you agree to comply with and be bound by these Terms of Use, including our [Privacy Policy](#). If you do not agree with any part of these terms, you must not use our website or services.
+**Espresso** is a service provided by **Project Cafecito**, a project under **Strategic Implementation Advising, LLC**. By accessing or using this website, you agree to comply with and be bound by these Terms of Use, including our [Privacy Policy](/docs/privacy-policy/). If you do not agree with any part of these terms, you must not use this website or services.
 
 **1. Acceptance of Terms**
 
-By using Espresso, you accept and agree to be bound by these Terms of Use, including our [Privacy Policy](#). **Strategic Implementation Advising, LLC** reserves the right to modify these terms at any time without notice. It is your responsibility to check for updates periodically. Your continued use of the service following any changes indicates your acceptance of those changes.
+By using Espresso, you accept and agree to be bound by these Terms of Use, including our [Privacy Policy](/docs/privacy-policy/). **Strategic Implementation Advising, LLC** reserves the right to modify these terms at any time without notice. It is your responsibility to check for updates periodically. Your continued use of the service following any changes indicates your acceptance of those changes.
 
 **2. Use of the Service**
 
@@ -42,7 +42,7 @@ If you choose to publish or share any links, comments, or content on your Espres
 
 **7. Privacy**
 
-Your use of the Espresso service is also governed by our [Privacy Policy](#), which explains how we collect, use, and protect your information.
+Your use of the Espresso service is also governed by our [Privacy Policy](/docs/privacy-policy/), which explains how we collect, use, and protect your information.
 
 **8. Governing Law and Jurisdiction**
 
