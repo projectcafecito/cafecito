@@ -1,8 +1,6 @@
 # Project Cafecito
 
-![Project Cafecito Logo](src/images/cafecito-banner.png)
-
-**Revolutionizing Productivity for Independent Professionals and Micro Businesses**
+**Revolutionizing Operational Productivity for Independent Professionals and Micro Businesses**
 
 _Backed by Strategic Implementations Advising LLC_
 
