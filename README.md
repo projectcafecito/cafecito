@@ -74,7 +74,7 @@ At Project Cafecito, we're constantly exploring new ideas and creating innovativ
 
 - [Terms of Use](/docs/terms-of-use.md)
 - [Privacy Policy](/docs/privacy-policy.md)
-- [Contact Us](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml)
+- [Contact Us](/contact/)
 
 ---
 
@@ -82,6 +82,15 @@ At Project Cafecito, we're constantly exploring new ideas and creating innovativ
 
 - **API Documentation**: [developer.cafecito.tech](https://developer.cafecito.tech)
 - **GitHub**: [soumitsalman/cafecito](https://github.com/soumitsalman/cafecito)
+
+## Contact Form Configuration
+
+The static contact page posts to a separately deployed form handler and uses Cloudflare Turnstile. Set these public build variables locally or as GitHub Actions repository variables:
+
+- `PUBLIC_CONTACT_FORM_ENDPOINT` - the HTTPS form-handler URL, such as `https://contact-api.cafecito.tech/submit`
+- `PUBLIC_TURNSTILE_SITE_KEY` - the public Turnstile widget site key
+
+The Turnstile secret and message-delivery credentials belong in the form handler's secret store and must never be added to this repository.
 
 ---
 

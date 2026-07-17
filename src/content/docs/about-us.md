@@ -24,4 +24,4 @@ He began his career in research and product development as a propulsion aerodyna
 
 With more than 30 years of combined experience, Soumit and Daniel joined forces to create innovative, cost-optimized technology solutions that simplify daily business operations. Their shared vision is to help people focus on meaningful work by taking care of the complex, repetitive tasks that get in the way.
 
-At Project Cafecito, we are redefining productivity through creative technology and a fresh perspective on the challenges faced by modern professionals. Learn more about the business on our [Overview](/docs/overview/) page, or [contact the team](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
+At Project Cafecito, we are redefining productivity through creative technology and a fresh perspective on the challenges faced by modern professionals. Learn more about the business on our [Overview](/docs/overview/) page, or [contact the team](/contact/).

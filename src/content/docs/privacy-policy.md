@@ -71,6 +71,10 @@ Please note that we may ask you to verify your identity before responding to suc
 
 We may employ third-party companies to facilitate our service, provide the service on our behalf, or assist us in analyzing how our service is used. These third parties have access to your personal data only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.
 
+### Contact Form Security
+
+Information submitted through our contact form is used to review and respond to the inquiry. We do not add contact-form senders to marketing lists unless they separately opt in. The form uses Cloudflare Turnstile to distinguish legitimate submissions from automated abuse. Cloudflare may process limited technical information about the browser and request for this security purpose. Contact-form submissions may also be processed by our configured message-delivery provider solely to deliver and manage the inquiry.
+
 ### Analytics
 
 We may use third-party service providers to monitor and analyze the use of our service. For example:
@@ -103,6 +107,6 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 ## Contact Information
 
-If you have any questions about this Privacy Policy, please [contact the team through GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
+If you have any questions about this Privacy Policy, please [contact the team](/contact/).
 
 By continuing to use Espresso, you acknowledge that you have read, understood, and agree to this Privacy Policy.

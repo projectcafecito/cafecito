@@ -30,7 +30,7 @@ Strategic Implementation Advising, LLC
 Mercer Island, WA 98040  
 United States
 
-For general questions, product feedback, or partnership inquiries, [contact the team through GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
+For general questions, product feedback, or partnership inquiries, [contact the team](/contact/). Technical bugs and public feature requests can still be submitted through [GitHub Issues](https://github.com/soumitsalman/cafecito/issues/new/choose).
 
 ## About us
 
