@@ -2,7 +2,7 @@
 
 **Revolutionizing Operational Productivity for Independent Professionals and Micro Businesses**
 
-_Backed by Strategic Implementations Advising LLC_
+_Backed by Strategic Implementation Advising, LLC_
 
 ## Who We Are
 
@@ -66,8 +66,11 @@ At Project Cafecito, we're constantly exploring new ideas and creating innovativ
 
 ## Legal & Policies
 
-- [Terms of Use](/docs/terms-of-use.md)
-- [Privacy Policy](/docs/privacy-policy.md)
+- [Legal and Policies](/docs/legal/)
+- [Terms of Service](/docs/terms-of-use/)
+- [Privacy Policy](/docs/privacy-policy/)
+- [Acceptable Use Policy](/docs/acceptable-use-policy/)
+- [Third-Party Content Policy](/docs/third-party-content-policy/)
 - [Contact Us](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml)
 
 ---

@@ -1,113 +1,112 @@
 ---
 title: Privacy Policy
-description: Project Cafecito privacy policy and information handling practices.
+description: How Project Cafecito handles account, API, website, and public-source information.
 ---
 
 # Privacy Policy
 
-**Effective Date:** September 16, 2024
+**Effective date:** September 11, 2026
 
-## Introduction
+This Privacy Policy explains how **Strategic Implementation Advising, LLC**, doing business as **Project Cafecito** (**“Cafecito,” “we,” “us,” or “our”**), handles personal information in connection with Cafecito websites, applications, APIs, MCP servers, developer tools, support, and related services, including Beans and Espresso (collectively, the **“Services”**).
 
-This Privacy Policy explains how **Project Cafecito** ("we," "our," or "us") collects, uses, and protects any information that you provide when you use the Espresso service. By using our website and services, you agree to the terms of this Privacy Policy.
+This policy does not govern a third-party publisher, website, application, or service linked from or represented in Cafecito output.
 
-We are committed to protecting your privacy. Should we ask you to provide certain information by which you can be identified while using our website, you can be assured that it will only be used in accordance with this Privacy Policy. Please check this page periodically for updates, as we may modify this policy from time to time.
+## Information we handle
 
-## Information We Collect and How We Use It
+Depending on the Service and how you use it, we may handle:
 
-We collect different types of information for various purposes to provide and improve our service to you.
+- **Account and contact information:** name, email address, organization, account identifiers, support messages, and communication preferences.
+- **Authentication and commercial records:** API-key identifiers, credential status, plan, usage allocation, transaction records, and limited billing information. Payment-card details, when applicable, are handled by the payment provider rather than stored by Cafecito.
+- **Service activity:** API requests, search queries, filters, submitted URLs, endpoints used, timestamps, response status, quota usage, error and diagnostic information, and actions taken in a Cafecito application.
+- **Device and network information:** IP address, browser or client type, user agent, operating system, referring page, and security signals.
+- **Cookies and local storage:** essential session, authentication, security, and preference data where a Service requires it. The corporate website does not use advertising cookies. If we introduce non-essential analytics or advertising technology, we will update this policy and provide any notice or choice required by law.
+- **Public-source information:** names, professional information, quotations, allegations, events, and other information appearing in public news, blogs, webpages, or publisher-controlled feeds. Cafecito may process this material to create search indexes, categories, entities, sentiment, scores, relationships, and other attributes.
+- **Information from service providers and partners:** account, fraud-prevention, support, payment, hosting, and publisher-license information received from vendors or commercial partners.
 
-### Types of Data Collected
+Please do not place secrets, credentials, sensitive personal information, or confidential material in queries or submitted URLs unless the applicable Service and agreement expressly support that use.
 
-- **Personal Data:** We may ask you to provide personally identifiable information that can be used to contact or identify you (“Personal Data”). This may include, but is not limited to, email address, name, address, and usage data. We may use this data to contact you with newsletters, marketing, or promotional materials. You may opt-out of receiving these communications by following the unsubscribe link provided in any email.
-  
-- **Usage Data:** We collect information on how you access and use the service ("Usage Data"). This data may include your IP address, browser type, browser version, the pages you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.
-  
-- **Tracking & Cookies Data:** We use cookies and similar tracking technologies to monitor activity on our service and hold certain information. You can configure your browser to refuse cookies; however, doing so may limit your ability to use some parts of our service. Examples of cookies we use:
-    - **Session Cookies:** To operate our service.
-    - **Preference Cookies:** To remember your preferences and various settings.
+## How we use information
 
-### Use of Data
+We use information to:
 
-We use the data collected for various purposes, including:
+- provide, authenticate, meter, bill, support, and improve the Services;
+- process queries and return requested results;
+- create search, classification, sentiment, entity, relevance, and related attributes;
+- secure the Services, prevent abuse, troubleshoot errors, and enforce agreements;
+- communicate about accounts, incidents, support, and material Service changes;
+- comply with law, valid legal process, and rights-holder or privacy requests;
+- maintain source provenance, content rights, correction, and removal records; and
+- send marketing communications where permitted, subject to available opt-out rights.
 
-- To provide and maintain our service
-- To notify you about changes to our service
-- To allow you to participate in interactive features of our service
-- To provide customer support
-- To gather analysis or valuable information to improve our service
-- To monitor the usage of our service
-- To detect, prevent, and address technical issues
-- To provide you with news, special offers, and information about goods and services, unless you opt out
+We do not use public-source content to make decisions about a person’s eligibility for employment, housing, credit, insurance, education, health care, or another legally significant opportunity.
 
-## Retention of Data
+## How we disclose information
 
-We retain your data only as long as necessary for the purposes set out in this Privacy Policy. We will retain and use your data to the extent necessary to comply with legal obligations, resolve disputes, and enforce our agreements. If you delete your account, we will remove your personal information, including your social media username and preferences, but some publicly available information may still be stored.
+We may disclose information:
 
-## Transfer of Data
+- to vendors that provide hosting, infrastructure, authentication, payments, security, analytics, communications, or support under appropriate restrictions;
+- to a customer or user when disclosure is inherent in the requested API result, including source attribution and public-source information;
+- to publishers, rights holders, or complainants as reasonably necessary to investigate a license, correction, removal, or infringement request;
+- to professional advisers and insurers subject to appropriate confidentiality obligations;
+- in connection with a merger, financing, reorganization, sale, or transfer of all or part of the business; or
+- when we reasonably believe disclosure is required by law or necessary to protect rights, safety, security, or the integrity of the Services.
 
-Your information, including personal data, may be transferred to — and maintained on — computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from your jurisdiction. All data is stored within the United States, and we take reasonable steps to ensure it is treated securely and in accordance with this Privacy Policy.
+We do not disclose API keys or account credentials to content publishers. Our policy is not to sell account information or API usage history for money or use it for cross-context behavioral advertising. Any change to that policy would require an updated disclosure and any notice or choice required by law.
 
-## Disclosure of Data
+## Retention
 
-We may disclose your data under certain circumstances:
+We retain information only for as long as reasonably necessary for the purpose collected, including to provide the Services, secure accounts, meet contractual or publisher requirements, resolve disputes, and comply with law. Retention depends on the category:
 
-- **Business Transactions:** If we are involved in a merger, acquisition, or asset sale, your personal data may be transferred.
-- **Event Registrations:** When promoting joint ventures or events, your personal data may be shared with organizers to confirm attendance and ensure that you receive what you registered for.
-- **Legal Requirements:** We may disclose your data if required by law or in response to valid requests from public authorities (e.g., a court or a government agency).
+- account and contract records: while the relationship is active and for the applicable legal, tax, and dispute period afterward;
+- API and security logs: for the operational and security period established in Cafecito’s current retention schedule;
+- support records: until the request is resolved and for a limited quality, security, and dispute period;
+- public-source copies: according to source rights, cache class, correction or removal status, and license terms; and
+- rights, consent, opt-out, and legal records: for as long as needed to document and honor the request or obligation.
 
-## Security of Data
+We delete or de-identify information when it is no longer needed, unless a legal hold or other obligation requires retention. Exact production retention periods must be established in the internal data inventory and reflected in any notice at collection where applicable.
 
-We are committed to ensuring that your information is secure. However, no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.
+## Public-source content, corrections, and removal
 
-## Your Rights Under U.S. Law
+Public availability does not eliminate privacy, safety, or reputational concerns. We evaluate requests involving incorrect attribution, sensitive personal information, doxxing, minors, source corrections or retractions, and legally valid deletion or removal rights. See the [Third-Party Content Policy](/docs/third-party-content-policy/) for the request process.
 
-You have the following rights regarding your data:
+Removing information from Cafecito does not remove it from the original source. We may direct you to contact the source when only the publisher can correct the underlying material.
 
-- **Access, Update, or Delete:** You have the right to request access to, correction of, or deletion of your personal data.
-- **Right to Object:** You can object to our processing of your personal data.
-- **Restriction of Processing:** You can request that we limit the processing of your personal data.
-- **Data Portability:** You have the right to obtain a copy of your personal data in a structured, machine-readable format.
-- **Withdraw Consent:** You have the right to withdraw consent where we rely on it to process your data.
+## Security
 
-Please note that we may ask you to verify your identity before responding to such requests.
+We use administrative, technical, and organizational measures designed for the nature of the information and Services. No system is completely secure. You are responsible for protecting your credentials and promptly reporting suspected unauthorized access.
 
-## Third-Party Service Providers
+## Your choices and privacy rights
 
-We may employ third-party companies to facilitate our service, provide the service on our behalf, or assist us in analyzing how our service is used. These third parties have access to your personal data only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+You may update available account information, unsubscribe from marketing email using the message’s opt-out mechanism, and request access, correction, deletion, or a copy of personal information associated with you. Depending on your location and applicable law, you may also have rights to opt out of certain sale, sharing, targeted advertising, or profiling; limit certain uses of sensitive information; appeal a denied request; or receive equal service after exercising a right.
 
-### Analytics
+We may verify your identity and authority before acting. Rights are subject to legal exceptions. An authorized agent may submit a request where applicable. We will honor browser-based opt-out preference signals, such as Global Privacy Control, where legally required and technically applicable.
 
-We may use third-party service providers to monitor and analyze the use of our service. For example:
+Use the [Project Cafecito contact form](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml) for an initial request, but do not post personal or confidential information in a public issue. We will provide a private channel for identity verification and supporting details.
 
-- **Google Analytics:** Google Analytics tracks and reports website traffic. Google may use the collected data to contextualize and personalize the ads of its advertising network. You can opt-out of Google Analytics by installing the Google Analytics opt-out browser add-on. For more information, visit [Google Privacy & Terms](http://www.google.com/intl/en/policies/privacy/).
+## California notice
 
-## Payments
+If the California Consumer Privacy Act applies to Cafecito or a particular processing activity, California residents may have rights to know, delete, correct, opt out of sale or sharing, limit certain uses of sensitive personal information, and receive non-discriminatory treatment. The categories described in **Information we handle**, the purposes in **How we use information**, the disclosures in **How we disclose information**, and the retention criteria in **Retention** form part of this notice.
 
-We may provide paid products or services within the service. In that case, we use third-party services for payment processing. We do not store or collect your payment card details. Payment information is provided directly to our third-party payment processors, who adhere to PCI-DSS standards.
+Cafecito does not knowingly sell or share, as those terms are defined by the CCPA, personal information of consumers under 16. Applicability and any additional notice-at-collection requirements are reviewed as Services and processing change.
 
-Our payment processors are:
+## Children
 
-- **Clover:** [Privacy Policy](https://www.clover.com/ca/privacy-policy)
-- **HubSpot:** [Privacy Policy](https://legal.hubspot.com/privacy-policy)
+The Services are intended for adults and are not directed to children under 13. We do not knowingly collect personal information directly from children under 13 through accounts. If you believe a child has provided account information, contact us so we can investigate and delete it where required. Public-source material about minors receives elevated review under our content-request process.
 
-## Compliance with Privacy Regulations
+## International use
 
-We comply with applicable U.S. privacy regulations, including:
+Cafecito operates from the United States, and information may be processed in the United States and other locations used by our service providers. If law requires a transfer mechanism, processor agreement, representative, or other safeguard for an international offering, Cafecito will implement it before representing that the offering complies with that regime.
 
-- **California Online Privacy Protection Act (CalOPPA):** We will not distribute your personal information to outside parties without your consent.
-- **Children’s Online Privacy Protection Act (COPPA):** We do not collect information from individuals under 13 years old. Our website and services are directed to people who are at least 13 years old.
+## Changes to this policy
 
-## Third-Party Links
+We may update this policy as Services or legal requirements change. We will post the revised policy and update the effective date. If a change materially affects registered users, we will provide reasonable notice through the Service or available account contact information.
 
-Our website may contain links to third-party websites. These sites have their own privacy policies, and we are not responsible for their content or activities. We recommend reviewing the privacy policies of any linked sites.
+## Contact
 
-## Changes to This Privacy Policy
+**Strategic Implementation Advising, LLC**  
+Attn: Project Cafecito Privacy  
+7683 SE 27th St. #188  
+Mercer Island, WA 98040  
+United States
 
-We may update this Privacy Policy from time to time. Changes will be posted on this page, and we encourage you to review this page periodically for any updates.
-
-## Contact Information
-
-If you have any questions about this Privacy Policy, please [contact the team through GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
-
-By continuing to use Espresso, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+For general privacy questions, use the [Project Cafecito contact form](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml) without posting personal or confidential details.

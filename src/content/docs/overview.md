@@ -43,5 +43,8 @@ Meet Soumit and Daniel, learn how their backgrounds shape the work, and read the
 
 ## Legal
 
+- [Legal and Policies](/docs/legal/)
 - [Terms of Use](/docs/terms-of-use/)
 - [Privacy Policy](/docs/privacy-policy/)
+- [Acceptable Use Policy](/docs/acceptable-use-policy/)
+- [Third-Party Content Policy](/docs/third-party-content-policy/)

@@ -1,85 +1,116 @@
 ---
-title: Terms of Use
-description: Terms governing access to Project Cafecito websites and services.
+title: Terms of Service
+description: Terms governing Project Cafecito websites, applications, APIs, and MCP services.
 ---
 
 # Terms of Service
 
-**Effective Date:** September 16, 2024
+**Effective date:** September 11, 2026
 
-**Espresso** is a service provided by **Project Cafecito**, a project under **Strategic Implementation Advising, LLC**. By accessing or using this website, you agree to comply with and be bound by these Terms of Use, including our [Privacy Policy](/docs/privacy-policy/). If you do not agree with any part of these terms, you must not use this website or services.
+These Terms of Service (the **“Terms”**) are an agreement between you and **Strategic Implementation Advising, LLC**, doing business as **Project Cafecito** (**“Cafecito,” “we,” “us,” or “our”**). They govern your access to and use of Cafecito websites, applications, APIs, MCP servers, developer tools, documentation, and related services, including Beans and Espresso (collectively, the **“Services”**).
 
-**1. Acceptance of Terms**
+These Terms incorporate the [Acceptable Use Policy](/docs/acceptable-use-policy/), [Privacy Policy](/docs/privacy-policy/), and [Third-Party Content Policy](/docs/third-party-content-policy/). An order form or separately signed agreement controls if it expressly conflicts with these Terms.
 
-By using Espresso, you accept and agree to be bound by these Terms of Use, including our [Privacy Policy](/docs/privacy-policy/). **Strategic Implementation Advising, LLC** reserves the right to modify these terms at any time without notice. It is your responsibility to check for updates periodically. Your continued use of the service following any changes indicates your acceptance of those changes.
+## 1. Acceptance and eligibility
 
-**2. Use of the Service**
+By accessing or using a Service, creating an account, obtaining an API key, or agreeing to an order form that references these Terms, you agree to them. If you use a Service for an organization, you represent that you have authority to bind it. You must be at least 18 years old and legally able to enter a contract.
 
-Espresso is provided for informational and personal use only. The content of the pages of this website is for your general information and use and is subject to change without notice. You agree to use this service responsibly and not for any unlawful or prohibited purpose. You may not use this website in any way that could damage, disable, overburden, or impair the service, or interfere with any other party’s use of the service.
+## 2. Accounts and API credentials
 
-This website may also include links to other websites for your convenience. These links do not signify endorsement, and **Strategic Implementation Advising, LLC** assumes no responsibility for the content of the linked website(s).
+You must provide accurate account information and keep it current. API keys, tokens, and other credentials are confidential to your account. You may not sell, transfer, publish, or share them except with authorized personnel or service providers acting for you. You are responsible for activity performed with your credentials and must promptly report suspected compromise.
 
-While we strive to ensure the service remains free from harmful, biased, or offensive content, the nature of sorting public content in large volumes means we cannot guarantee that the service will not serve offensive or harmful material. You acknowledge and accept the risks involved in using an unbiased aggregator, particularly during the initial stages of the service.
+We may impose documented technical limits, including rate, quota, concurrency, and output limits. You may not evade those limits or use multiple accounts or credentials to do so.
 
-**3. Intellectual Property and Open-Source Licensing**
+## 3. Permission to use the Services
 
-Espresso is an open-source project licensed under the **MIT License**, with a public repository hosted on GitHub. All original content provided on this website, excluding contributions from the open-source community, is the property of **Strategic Implementation Advising, LLC** or its licensors and is protected by United States and international copyright laws.
+Subject to these Terms and any applicable order form, Cafecito grants you a limited, non-exclusive, non-transferable, revocable right to access and use the Services for your internal business or personal purposes. This permission does not transfer ownership of the Services, Cafecito software, documentation, or third-party content.
 
-For any source code or contributions made to the open-source project, users are bound by the terms of the **MIT License**, which permits reuse, modification, and distribution of the software, provided that the original license terms are retained.
+Open-source software remains governed by the license included with that software. These Terms do not replace an applicable open-source license.
 
-You may not reproduce, distribute, or create derivative works from any non-open-source content without express permission from **Strategic Implementation Advising, LLC**.
+## 4. Third-party content and generated attributes
 
-**4. Disclaimer of Warranties**
+Beans and other Services may return material originating from third parties, such as titles, links, authors, publication dates, feed-supplied article text, and other source material (**“Third-Party Content”**). Cafecito may also provide classifications, categories, entities, sentiment, scores, summaries, relationships, and other machine-generated or derived attributes.
 
-Espresso is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the service will be uninterrupted, error-free, or free of viruses or other harmful components.
+Third-Party Content remains owned by its applicable author, publisher, or other rights holder. Access through a Cafecito Service does not grant you ownership or an unrestricted license. Content delivered through an RSS or other publisher-controlled feed may still be protected by copyright and subject to publisher terms or license restrictions.
 
-Neither **Strategic Implementation Advising, LLC** nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness, or suitability of the information and materials found on this website for any particular purpose. You acknowledge that such information may contain inaccuracies or errors, and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
+Unless the API response, documentation, an order form, or a separate license expressly grants broader rights, you may use Third-Party Content only as needed to consume the Service for internal evaluation and analysis. You may not republish, resell, sublicense, create a substitute archive or dataset from, train a model on, or publicly display full-text Third-Party Content. Required attribution, source links, copyright notices, retention limits, deletion instructions, and machine-readable rights metadata must be preserved and honored.
 
-**5. Limitation of Liability**
+Machine-generated attributes may be incomplete, inaccurate, stale, or misleading. They are informational outputs, not statements by or endorsements from the cited source, and must not be treated as professional legal, medical, financial, or safety advice.
 
-In no event shall **Strategic Implementation Advising, LLC**, its affiliates, or its licensors be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your use or inability to use the service; (ii) any unauthorized access to or use of our servers and/or any personal information stored therein; (iii) any interruption or cessation of transmission to or from our service; or (iv) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our service by any third party.
+See the [Third-Party Content Policy](/docs/third-party-content-policy/) for the content model, notices, and correction process.
 
-Your use of any information or materials on this website is entirely at your own risk. It shall be your responsibility to ensure that any products, services, or information available through this website meet your specific requirements.
+## 5. Your inputs and requested URLs
 
-**6. User-Generated Content**
+You retain your rights in prompts, queries, filters, URLs, and other material you submit (**“Inputs”**). You grant Cafecito a non-exclusive license to host, process, transmit, and use Inputs only as reasonably necessary to provide, secure, support, and improve the Services and comply with law.
 
-If you choose to publish or share any links, comments, or content on your Espresso page, you are solely responsible for the content you provide. **Strategic Implementation Advising, LLC** does not endorse any content provided by users and reserves the right to remove any user-generated content at its sole discretion.
+You represent that you have the rights and authority needed for your Inputs and requested uses. You must not use the Services to access non-public material, bypass a paywall or authentication control, violate source-site terms, or infringe another person’s rights.
 
-**7. Privacy**
+## 6. Acceptable use
 
-Your use of the Espresso service is also governed by our [Privacy Policy](/docs/privacy-policy/), which explains how we collect, use, and protect your information.
+You must comply with the [Acceptable Use Policy](/docs/acceptable-use-policy/). Among other restrictions, you may not misuse the Services to violate law or intellectual-property rights, evade technical controls, obtain restricted personal information, harass or profile people unlawfully, remove attribution, or exceed the rights attached to Third-Party Content.
 
-**8. Governing Law and Jurisdiction**
+## 7. Availability, changes, and beta features
 
-Your use of this website and any dispute arising out of such use is subject to the laws of Washington State, USA. Any legal action or proceeding related to your access to or use of the website shall be instituted in a state or federal court in Washington State. You agree to submit to the jurisdiction of, and agree that venue is proper in, these courts.
+We may add, change, suspend, or discontinue Service features. Preview, experimental, or beta features may be changed or withdrawn at any time and may be less reliable. We do not guarantee that a source, article, attribute, endpoint, or result will remain available.
 
-**9. SPAM Communication**
+## 8. Fees and taxes
 
-By providing your personal information through our contact pages and other online forms, you agree to receive email or phone communication from us. However, all email communication with you shall contain an 'unsubscribe' link that allows you to unsubscribe from future correspondence and/or manage your contact details. We comply with the CAN-SPAM Act, and all marketing communications will include the option to unsubscribe. If you unsubscribe, we will promptly remove your information from our marketing lists.
+If a Service is paid, you agree to pay the fees and taxes stated in the applicable checkout page or order form. Except where law or an order form requires otherwise, fees are non-refundable. Separate subscription, renewal, cancellation, and refund terms presented at purchase also apply.
 
-**10. Force Majeure**
+## 9. Suspension and termination
 
-**Strategic Implementation Advising, LLC** shall not be held liable for any failure or delay in performing its obligations due to circumstances beyond its reasonable control, including but not limited to natural disasters, war, terrorism, labor strikes, or network or service interruptions.
+You may stop using the Services at any time. We may suspend or terminate access when reasonably necessary to address a violation of these Terms, security or legal risk, nonpayment, excessive operational risk, a publisher or rights-holder restriction, or discontinuation of a Service. Where practical, we will provide notice and an opportunity to cure.
 
-**11. Dispute Resolution and Arbitration**
+Upon termination, your right to use the Services ends. Terms concerning ownership, Third-Party Content, disclaimers, liability, indemnity, disputes, and other provisions that by their nature should survive will remain in effect. You must delete content when required by rights metadata, an applicable license, an order form, or a removal notice.
 
-Any disputes arising under these Terms of Use will be settled through binding arbitration in accordance with the rules of the American Arbitration Association. You agree to waive any right to a jury trial or to participate in a class-action lawsuit. By using the service, you agree to resolve all disputes through individual arbitration rather than litigation or other legal proceedings.
+## 10. Cafecito intellectual property and feedback
 
-**12. International Users**
+The Services and Cafecito-created materials are owned by Cafecito or its licensors and are protected by applicable law. Except for the limited permission in these Terms or an open-source license, no rights are granted by implication.
 
-If you access the website or service from outside the United States, you do so at your own risk and are responsible for compliance with local laws. These Terms of Use are governed by the laws of Washington State, USA, regardless of conflict of law principles.
+If you provide feedback, you grant Cafecito a perpetual, worldwide, irrevocable, royalty-free right to use it without restriction or compensation, provided we do not identify you publicly without permission.
 
-**13. Contact Information**
+## 11. Copyright and other complaints
 
-If you have any questions or concerns about these Terms of Use, please contact us at:
+Rights holders and subjects of content may use the notice and correction process in the [Third-Party Content Policy](/docs/third-party-content-policy/). We may remove or restrict content, disable links, update derived attributes, or suspend repeat infringers when appropriate.
+
+## 12. Disclaimers
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES AND ALL OUTPUTS ARE PROVIDED **“AS IS”** AND **“AS AVAILABLE.”** CAFECITO DISCLAIMS ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, AND QUIET ENJOYMENT. WE DO NOT WARRANT UNINTERRUPTED OR ERROR-FREE OPERATION, COMPLETE COVERAGE, CURRENT OR ACCURATE CONTENT, OR THAT ANY OUTPUT IS LAWFUL FOR YOUR INTENDED DOWNSTREAM USE.
+
+## 13. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, CAFECITO AND ITS AFFILIATES, LICENSORS, AND PERSONNEL WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING FROM OR RELATED TO THE SERVICES.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, CAFECITO’S TOTAL LIABILITY ARISING FROM OR RELATED TO THE SERVICES WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID CAFECITO FOR THE AFFECTED SERVICE DURING THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO LIABILITY OR (B) US$100.
+
+These limitations do not apply where prohibited by law.
+
+## 14. Indemnification
+
+To the extent permitted by law, you will defend, indemnify, and hold harmless Cafecito and its affiliates and personnel from third-party claims, damages, and reasonable costs arising from your Inputs, your downstream use or redistribution of output, your violation of these Terms or law, or your infringement or misuse of another party’s rights.
+
+## 15. Export controls and sanctions
+
+You may not use or export the Services in violation of applicable U.S. export-control or sanctions laws. You represent that you are not prohibited from receiving the Services under those laws.
+
+## 16. Governing law and venue
+
+Washington law governs these Terms, without regard to conflict-of-law rules. Any dispute not subject to a separately signed dispute-resolution provision must be brought in the state or federal courts with jurisdiction over Mercer Island, Washington, and each party consents to their jurisdiction and venue. Nothing in this section prevents either party from seeking injunctive or equitable relief where appropriate.
+
+## 17. General terms
+
+These Terms, incorporated policies, and applicable order forms are the entire agreement concerning the Services. If a provision is unenforceable, the remaining provisions remain effective. A failure to enforce a provision is not a waiver. You may not assign these Terms without our written consent; we may assign them in connection with a merger, reorganization, sale of assets, or operation of law. Neither party is liable for delay caused by events beyond its reasonable control.
+
+## 18. Changes to these Terms
+
+We may update these Terms. We will post the revised version and update the effective date. For material changes affecting an existing paid or registered user, we will provide reasonable notice through the Service or available account contact information. Changes apply prospectively unless law requires otherwise.
+
+## 19. Contact
 
 **Strategic Implementation Advising, LLC**  
+Attn: Project Cafecito  
 7683 SE 27th St. #188  
 Mercer Island, WA 98040  
 United States
 
-**14. Changes to These Terms**
-
-**Strategic Implementation Advising, LLC** reserves the right to change, modify, or revise these Terms of Use at any time without notice. Any changes will be posted on this page, and your continued use of the service after such changes have been posted constitutes acceptance of the modified terms.
-
-By using Espresso, you acknowledge that you have read, understood, and agree to these Terms of Use.
+For general questions, use the [Project Cafecito contact form](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml). Do not include confidential information or sensitive personal data in a public GitHub issue.

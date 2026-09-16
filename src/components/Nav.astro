@@ -9,15 +9,21 @@ const productUrl = '/products/';
       <span>Project Cafecito</span>
     </a>
     <details class="mobile-menu">
-      <summary aria-label="Open navigation">Menu</summary>
+      <summary aria-label="Open navigation">
+        <span aria-hidden="true">☰</span>
+      </summary>
       <div class="mobile-menu-links">
         <a href={productUrl}>Products</a>
         <a href="https://developer.cafecito.tech">Developer portal</a>
         <a href="/blogs/">Blogs</a>
         <a href="/docs/overview/">Overview</a>
         <a href="/docs/about-us/">About us</a>
+        <div class="mobile-menu-divider" role="separator"></div>
+        <a href="/docs/legal/">Legal &amp; Policies</a>
         <a href="/docs/terms-of-use/">Terms of Use</a>
         <a href="/docs/privacy-policy/">Privacy Policy</a>
+        <a href="/docs/acceptable-use-policy/">Acceptable Use</a>
+        <a href="/docs/third-party-content-policy/">Content Policy</a>
         <a href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact</a>
       </div>
     </details>
@@ -30,8 +36,11 @@ const productUrl = '/products/';
         <div class="company-menu-links">
           <a href="/docs/overview/">Overview</a>
           <a href="/docs/about-us/">About us</a>
+          <a href="/docs/legal/">Legal &amp; Policies</a>
           <a href="/docs/terms-of-use/">Terms of Use</a>
           <a href="/docs/privacy-policy/">Privacy Policy</a>
+          <a href="/docs/acceptable-use-policy/">Acceptable Use</a>
+          <a href="/docs/third-party-content-policy/">Content Policy</a>
         </div>
       </details>
       <a class="nav-pill" href="https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml">Contact</a>

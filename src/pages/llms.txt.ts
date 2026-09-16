@@ -47,6 +47,14 @@ const content = `# Project Cafecito
 ## Contact
 
 - Contact and project issues: https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml
+
+## Legal and policies
+
+- Legal index: https://cafecito.tech/docs/legal/
+- Terms of Service: https://cafecito.tech/docs/terms-of-use/
+- Privacy Policy: https://cafecito.tech/docs/privacy-policy/
+- Acceptable Use Policy: https://cafecito.tech/docs/acceptable-use-policy/
+- Third-Party Content Policy: https://cafecito.tech/docs/third-party-content-policy/
 `;
 
 export function GET() {
