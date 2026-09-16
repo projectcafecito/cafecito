@@ -1,40 +1,28 @@
-name: General Contact
-description: Have a question about our company, products, pricing, or anything else? We'd love to hear from you! Use this form to reach out.
-title: "[Contact]: "
-labels: ["contact", "triage"]
+name: Public bug report or product feedback
+description: Report a non-confidential software bug or share product feedback publicly.
+title: "[Bug/Feedback]: "
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reaching out! Please provide as much detail as possible so we can assist you better. We're here to help with questions about our company, products, pricing, release timelines, feature requests, product requests, engagement opportunities, or anything else on your mind. If you just want to yell at us, that's fine too! We look forward to hearing from you.
+        GitHub issues are public. Do not include passwords, API keys, credentials, identification documents, sensitive personal information, confidential business details, or complete copyrighted works.
+
+        For legal, privacy, publisher, copyright, correction, abuse, security, or other confidential matters, use https://cafecito.tech/docs/contact/.
   - type: dropdown
     id: category
     attributes:
-      label: What is your question about?
-      description: Select the category that best fits your inquiry.
+      label: What are you reporting?
       options:
-        - Company
-        - Partnerships
-        - Products
-        - Features
-        - Timeline
-        - Pricing
-        - Other
+        - Software bug
+        - Documentation bug
+        - Product feedback
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: Please describe your question or request in detail
-      description: Share more about what you're asking. The more information you provide, the better we can help!
-      placeholder: "For example: I'm interested in learning more about your AI chat features and how they integrate with our system."
+      label: What happened or what should improve?
+      description: Describe the affected product, expected behavior, actual behavior, or product feedback.
     validations:
       required: true
-  - type: input
-    id: contact
-    attributes:
-      label: Your contact information (optional)
-      description: If you'd like us to follow up directly, please provide your email (In absence of an email, we will respond here on GitHub).
-      placeholder: "e.g., email@example.com"
-    validations:
-      required: false

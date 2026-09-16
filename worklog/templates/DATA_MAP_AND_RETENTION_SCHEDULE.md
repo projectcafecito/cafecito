@@ -12,7 +12,7 @@ Complete this from production systems and vendor contracts before final privacy-
 | Support/legal request | | User/requestor | | | | | | | | |
 | Public-source metadata | | Web/feed/publisher | | | | | | | | |
 | Feed-supplied full text | | Feed/publisher | | | | | | | | |
-| Scraped processing copy | | Public webpage | | | | | | | | |
+| Public-information processing copy | | Public-information source | | | | | | | | |
 | Derived tags/attributes | | Cafecito model | | | | | | | | |
 | Embedding/index | | Cafecito pipeline | | | | | | | | |
 | License/rights record | | Publisher/legal | | | | | | | | |
@@ -38,7 +38,7 @@ For each vendor record:
 - Fixed period for API and security logs:
 - Fixed period for support tickets:
 - Account deletion grace and backup expiry:
-- Scraped processing-copy lifetime:
+- Public-information processing-copy lifetime:
 - Feed full-text lifetime by license:
 - Derived-data survival after source deletion/license termination:
 - Rights/takedown record retention:

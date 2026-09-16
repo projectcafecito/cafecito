@@ -17,6 +17,10 @@ const docs = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     description: z.string().optional(),
+    policyVersion: z.string().optional(),
+    effectiveDate: z.coerce.date().optional(),
+    lastUpdated: z.coerce.date().optional(),
+    status: z.enum(['effective', 'counsel-review']).optional(),
   }),
 });
 

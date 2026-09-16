@@ -35,7 +35,7 @@ export const products = [
     statusLabel: 'Live',
     category: 'News & blogs API',
     description:
-      'A live aggregation and search service for news and blogs, with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support for AI workflows.',
+      'A public-information discovery and search service covering nearly 15,000 sources/outlets daily, with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support.',
     audience: 'Developers, AI agents, and teams building RAG or media-monitoring workflows.',
     capabilities: ['News and blog aggregation', 'Browser News App', 'Semantic search', 'Rich filtering', 'JSON API and MCP'],
     image: '/images/beans.png',
@@ -102,9 +102,9 @@ export const products = [
     statusLabel: 'In development',
     category: 'Medical operations',
     description:
-      'A planned medical billing automation product focused on reducing claim denials, paperwork friction, and operational overhead.',
+      'A medical operations concept in development. It is unavailable and is not accepting production medical or patient data.',
     audience: 'Medical practices and operations teams managing repetitive billing workflows.',
-    capabilities: ['Medical billing automation', 'Claims workflows', 'Operational support'],
+    capabilities: ['Concept development', 'Workflow research', 'Not accepting production data'],
     image: '/images/medicafe.png',
     links: [],
   },

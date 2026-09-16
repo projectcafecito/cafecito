@@ -21,7 +21,7 @@ Use `yes`, `no`, or a specific limit. Never infer one right from another.
 | Right | Scope/limit | Attribution | Retention | Fee/unit |
 |---|---|---|---|---|
 | Automated access/crawl | | | | |
-| RSS/feed ingestion | | | | |
+| Public-information collection and processing | | | | |
 | Reproduction/technical copies | | | | |
 | Parse/extract article body | | | | |
 | Normalize/HTML-to-text or Markdown | | | | |

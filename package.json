@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run verify:legal && astro build",
+    "verify:legal": "node scripts/verify-legal-content.mjs",
+    "verify:legal:generated": "node scripts/verify-legal-content.mjs --generated",
     "preview": "astro preview"
   },
   "dependencies": {

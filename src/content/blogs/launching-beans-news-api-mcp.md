@@ -1,6 +1,6 @@
 ---
 title: "Launching Beans"
-description: "News API & MCP for AI agents, RAG pipelines, trend dashboards, and real-time content workflows."
+description: "News API & MCP for AI agents, search workflows, and trend dashboards using public information updated daily."
 publishedAt: 2026-04-08
 type: announcement
 tags: ["beans", "api", "mcp", "news", "agents"]
@@ -8,20 +8,15 @@ tags: ["beans", "api", "mcp", "news", "agents"]
 
 Hey gang, I am back with some fresh shit. But first, it is my pleasure to introduce Project Cafecito's second product: Beans.
 
-Beans, like coffee beans, is our news and blogs API. Like everything these days, it comes with an MCP server for AI agents. It is currently in beta and therefore considers every bug a feature. But:
+Beans, like coffee beans, is our news and blogs API. Like everything these days, it comes with an MCP server for AI agents. It is currently in beta and therefore considers every bug a feature.
 
-- Good news: It is free until we knock out the list of v1 readiness bugs.
-- Better news: v1 will be cheaper than other news APIs out there. Yes, we will beat the price for a similar rate limit and quota. That's literally the point.
+All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase.
 
 Create an API key and start sipping for free.
 
 ![Beans API & MCP banner](/images/beans-banner.png)
 
-There are so many news APIs out there. They all charge an arm and a leg for a bunch of sources no one cares about. Almost none give you social media stats or trend data.
-
-And that's why, when you need a fresh data pipeline for your AI agent's RAG without bleeding money, you use Beans.
-
-## Cheaper Price, Higher Precision
+Beans focuses on broad source coverage, precise search, useful metadata, and trend context for applications that need current public information.
 
 ## Features
 
@@ -32,7 +27,9 @@ The stuff that actually matters:
 - Enriched tags and sentiment analysis: Avoid clickbait with 100+ categories, 24+ sentiments, and named entities extracted from the actual body of the content.
 - Story propagation mapping: See how different sources are publishing the same news. This one took some work and is still getting tuned.
 - Social media stats and trend scoring from real social signals: Find what the cool kids are talking about.
-- 7,000+ sources and still growing: Source quality matters, and so does focus. We have the usual suspects, and we pick sources to primarily serve technology, engineering, business, and finance aficionados. One thing we are intentionally focused on is sourcing tech blogs from the many amazing startups out there.
+- Nearly 15,000 sources/outlets: Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily. Source availability varies, and inclusion does not imply endorsement or unrestricted content rights.
+
+**Coverage update — September 16, 2026:** coverage has grown substantially since the original launch. The current source figure replaces the earlier launch count and describes sources/outlets, not unique publishers.
 
 ## Who Is This For?
 
@@ -49,12 +46,12 @@ Then Beans is the missing piece you need.
 
 ## Why We Built It
 
-Pulling a bunch of RSS feeds is not much on its own these days. But the second you try to feed real-time content into an AI agent or RAG pipeline at scale, things get complicated fast.
+Collecting and enriching public information at scale gets complicated fast when an application needs current, searchable source material.
 
 I got tired of:
 
-- Crawling the same 7,000+ sites and social media groups.
-- Dealing with rate limits, timeouts, and random 403s.
+- Maintaining broad, changing source coverage.
+- Dealing with availability changes, incomplete records, and inconsistent metadata.
 - Clickbait that had nothing to do with the content.
 - Vector DBs choking on burst loads.
 - Having zero idea what is trending globally.
@@ -63,12 +60,7 @@ So we built Beans API & MCP. You can find trending stuff, latest stuff, and stuf
 
 ## How We Built It
 
-Under the hood:
-
-- One dude collects news and blogs from RSS feeds and social media.
-- One dude parses the stuff and extracts keywords that matter.
-- One dude stores it in the vector data warehouse.
-- One dude serves it on a plate to you through the API and MCP server.
+Under the hood, public-information collection and enrichment systems organize source material, add useful metadata, and make available results searchable through the API and MCP service.
 
 Theoretically, it is a simple system. Building the first prototype was a cakewalk. But building cost-efficient production-scale infrastructure is hard. When that infrastructure has to maintain reliability through my stress testing, it starts sweating from places where the sun does not shine.
 
@@ -76,7 +68,7 @@ That is why it took a while to release the API. In the coming days, I will publi
 
 ## So... What Now?
 
-Fire up that app or agent with Beans. It's free.
+Fire up that app or agent with Beans. It is currently available as free tier.
 
 There are some obvious bugs that I am still pruning out. I would love to hear from you.
 

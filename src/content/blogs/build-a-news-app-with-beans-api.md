@@ -1,6 +1,6 @@
 ---
 title: "How to Build a News App with the Beans API"
-description: "A practical, mildly unhinged guide to building a news app with feeds, stories, search, source metadata, and fewer hand-rolled RSS disasters."
+description: "A practical, mildly unhinged guide to building a news app with discovery views, stories, search, and source metadata."
 publishedAt: 2026-09-08T12:00:00-04:00
 type: blog
 tags: ["beans", "api", "news", "javascript", "tutorial"]
@@ -260,6 +260,8 @@ GET /articles/{article_id}/mentions
 ```
 
 This keeps the home page fast and lets the detail view provide the useful extras: available body content, related reading, and external observations. Always retain the original article `url` for attribution and the outbound link.
+
+`full_content=true` requests content that may be available for the selected record. It does not grant ownership or downstream display, redistribution, bulk archival, resale, permanent retrieval storage, or model-training rights. Retrieve article detail when a reader selects it, preserve attribution and the canonical-source link, and assess the rights required for your use rather than treating the option as a bulk-content license.
 
 ## The short version
 

@@ -1,55 +1,60 @@
 ---
 title: Acceptable Use Policy
-description: Rules for lawful and responsible use of Project Cafecito services and content.
+description: Rules for using Project Cafecito websites, applications, APIs, MCP services, and publications.
+policyVersion: "2026-09-16"
+effectiveDate: 2026-09-16
+lastUpdated: 2026-09-16
+status: effective
 ---
 
 # Acceptable Use Policy
 
-**Effective date:** September 11, 2026
+**Effective date:** September 16, 2026
 
-This Acceptable Use Policy applies to all Project Cafecito websites, applications, APIs, MCP servers, developer tools, and related services. Capitalized terms have the meanings given in the [Terms of Service](/docs/terms-of-use/).
+This Acceptable Use Policy applies to all Project Cafecito websites, applications, APIs, MCP services, developer tools, publications, and related services. It is incorporated into the [Terms of Service](/docs/terms-of-use/).
 
-You may not use a Service to:
+You may not use a Service, directly or indirectly, to do any of the following.
 
-## Access systems or content without authority
+## Violate law or another person’s rights
 
-- bypass a paywall, login, authentication requirement, CAPTCHA, robots-based restriction that Cafecito enforces, or other technical access control;
-- use stolen, shared, or improperly obtained credentials, cookies, tokens, or session data;
-- probe, scan, disrupt, overload, reverse engineer, or gain unauthorized access to a Service or third-party system;
-- evade rate limits, quotas, source restrictions, suspension, or content-rights controls; or
-- request private or non-public data without authorization.
+- violate applicable law, regulation, court order, sanctions, or export controls;
+- infringe copyright, trademark, privacy, publicity, database, contractual, or other rights;
+- defame, harass, threaten, stalk, dox, exploit, or endanger a person;
+- collect, infer, publish, or use sensitive or personal information unlawfully;
+- fabricate quotations, sources, evidence, or endorsements; or
+- remove or falsify attribution, canonical links, authorship, notices, or source information.
 
-## Violate content or intellectual-property rights
+## Access systems or information without authority
 
-- infringe copyright, trademark, privacy, publicity, database, contract, or other rights;
-- remove attribution, source links, copyright notices, rights metadata, or use restrictions;
-- republish, resell, sublicense, publicly display, or create a substitute service from Third-Party Content unless expressly permitted;
-- build a durable full-text archive, bulk dataset, or competing publisher database unless expressly licensed;
-- use Third-Party Content for model training or fine-tuning unless the applicable rights metadata or written license expressly permits it;
-- retain or redistribute content after a required deletion, license expiration, publisher withdrawal, or Cafecito notice; or
-- use the Services to circumvent restrictions that apply to the original source.
+- access non-public systems or material without authorization;
+- bypass authentication, access restrictions, technical controls, or source restrictions;
+- use stolen, shared, fabricated, or unauthorized credentials, cookies, tokens, or session data; or
+- request or combine output to reconstruct information Cafecito or a source has restricted.
 
-## Harm people or misuse personal information
+## Misuse third-party content
 
-- stalk, harass, threaten, discriminate against, dox, or unlawfully profile a person;
-- collect or expose passwords, authentication data, financial account numbers, government identifiers, precise location, private communications, health data, or information about minors without lawful authority;
-- make decisions about employment, housing, credit, insurance, education, health care, or another legally significant opportunity using Cafecito output where law restricts that use; or
-- facilitate identity theft, fraud, surveillance abuse, or physical harm.
+Unless a written agreement expressly permits the use, you may not publicly display or redistribute complete third-party works; build a substitute source site, archive, bulk dataset, or competing content database; resell, sublicense, or syndicate Third-Party Content; use it for model training, fine-tuning, dataset creation, or permanent RAG storage; remove required attribution; or continue using material after an applicable restriction, withdrawal, or deletion instruction.
 
-## Deceive or cause unlawful harm
+## Conduct harmful profiling or high-impact decisions
 
-- impersonate another person or misrepresent the source, endorsement, license status, freshness, or accuracy of content;
-- present machine-generated attributes as verified fact or fabricate quotations;
-- distribute malware, phishing, spam, or content that violates applicable law;
-- use the Services in violation of export-control or sanctions laws; or
-- help another person perform a prohibited act.
+You may not use the Services as a consumer reporting agency or use Service output as the sole or determinative basis for decisions about employment, housing, credit, insurance, education, health care, public benefits, legal services, or another high-impact domain.
+
+You may not use the Services for unlawful surveillance, biometric identification, location tracking, sensitive-trait inference, or profiling of children or vulnerable people.
+
+## Spread deception or unsafe content
+
+Do not present allegations as established facts, knowingly distribute materially false or misleading content, use automated output without appropriate verification where an error could materially harm a person, represent Cafecito output as verified professional advice, or use the Services for malware, credential theft, phishing, spam, fraud, or other abusive activity.
+
+## Attack or overload the Services
+
+Do not probe vulnerabilities without written authorization, disrupt or overload Services, evade limits, conceal the source of abusive traffic, create accounts to evade suspension, or publish API keys.
 
 ## Your operational duties
 
-You must protect credentials, respect all machine-readable rights and retention fields, maintain required attribution, independently evaluate high-risk outputs, and promptly act on correction or deletion instructions. Contact Cafecito before a use if the applicable rights are unclear.
+Protect credentials, preserve available source links and attribution, independently evaluate consequential output, and promptly act on correction, restriction, or deletion instructions. Contact Cafecito before proceeding when permitted use is unclear.
 
-## Enforcement
+## Enforcement and reporting
 
-We may investigate suspected violations and limit, suspend, or terminate access. Where appropriate, we may preserve records, restrict content or domains, cooperate with a valid legal process, or require deletion of affected output. Enforcement decisions may consider intent, severity, recurrence, remediation, and risk to users, publishers, or the Services.
+Cafecito may investigate suspected violations, limit or block requests, restrict output, suspend or terminate accounts, preserve relevant records, and cooperate with lawful investigations. We may act immediately when needed to address legal, security, rights, or safety risk.
 
-Report suspected abuse through the [Project Cafecito contact form](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml). Do not include secrets or sensitive personal information in a public GitHub issue.
+Email [support@cafecito.tech](mailto:support@cafecito.tech) with the subject **Abuse Report**. Do not include credentials or unnecessary sensitive information.

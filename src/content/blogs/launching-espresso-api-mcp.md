@@ -200,7 +200,7 @@ See you in the comments.
 
 ## Espresso vs Beans: When to Use Which
 
-[Beans API](https://developer.cafecito.tech/howtos/beans-howto) is your bare metal news and blogs API. You query it when you want raw content being published by different publishers, authors, and news sites. It's great for RAG, full article retrieval, or when you need the original source material.
+[Beans API](https://developer.cafecito.tech/howtos/beans-howto) provides public-information discovery, broad source coverage, metadata, search, and available content. Use canonical source links to verify important details and assess whether your intended downstream use is permitted.
 
 Oh, by the way, we just added a new route for tracking content propagation across publishers and mentions on social media. It's good shit. [Check it out](https://developer.cafecito.tech/api/beans).
 
@@ -208,5 +208,5 @@ Espresso API is the structured, curated market intelligence layer. It takes mult
 
 In short:
 
-- Beans = the full firehose.
+- Beans = broad public-information discovery and source coverage.
 - Espresso = the refined shot you actually drink.

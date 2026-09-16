@@ -17,7 +17,7 @@
 
 ## Rights and content review
 
-- Acquisition method: RSS/feed / publisher API / web fetch / user input / other
+- Source record and collection class: public-information source / licensed source / user submission / other
 - License ID and scope:
 - Source terms/robots status:
 - Full text exposed:

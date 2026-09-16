@@ -15,6 +15,10 @@ Project Cafecito creates practical AI products, APIs, and automation workflows f
 
 Our current product line includes Beans, a news and blog aggregation API; Espresso, a market intelligence suite; and additional products in development for social automation and medical operations.
 
+All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase.
+
+Where Cafecito labels a product **Live**, that means it is publicly accessible. It does not promise paid availability, guaranteed uptime, a service-level agreement, or instantaneous delivery.
+
 ## Who we serve
 
 We build for people who need useful software without the cost, complexity, and overhead of a large enterprise platform. That includes small businesses, independent operators, developers, and teams that want focused tools they can connect to their existing systems.
@@ -35,7 +39,7 @@ Strategic Implementation Advising, LLC
 Mercer Island, WA 98040  
 United States
 
-For general questions, product feedback, or partnership inquiries, [contact the team through GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml).
+For general questions, product feedback, or partnership inquiries, use the [private contact page](/docs/contact/). [Report a bug on GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml) only when the report is suitable for public disclosure.
 
 ## About us
 
