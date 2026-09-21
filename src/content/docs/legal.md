@@ -35,4 +35,4 @@ Attn: Project Cafecito
 Mercer Island, WA 98040  
 United States
 
-Use the [private contact page](/docs/contact/) for general, legal, privacy, publisher, copyright, correction, abuse, or security matters. [Report a bug on GitHub](https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml) only when the report is suitable for public disclosure.
+Use the [private contact page](/contact) for general, legal, privacy, publisher, copyright, correction, abuse, or security matters. [Report a bug on GitHub](https://github.com/projectcafecito/cafecito/issues/new?template=general_contact.yml) only when the report is suitable for public disclosure.

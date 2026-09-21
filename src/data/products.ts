@@ -33,7 +33,7 @@ export const products = [
     name: 'Beans',
     status: 'live',
     statusLabel: 'Live',
-    category: 'News & blogs API',
+    category: 'News API',
     description:
       'A public-information discovery and search service with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support. Coverage and availability vary by source and record.',
     audience: 'Developers, AI agents, and teams building RAG or media-monitoring workflows.',
@@ -60,7 +60,7 @@ export const products = [
     name: 'Espresso',
     status: 'live',
     statusLabel: 'Live',
-    category: 'Market intelligence suite',
+    category: 'Market Intelligence Suite',
     description:
       'A curated intelligence suite combining the Espresso API and MCP with publications, event digests, synthesized signals, tags, and relationships.',
     audience: 'Developers, analysts, dashboards, and AI agents that need market-intelligence research and monitoring tools.',
@@ -87,7 +87,7 @@ export const products = [
     name: 'Cortado',
     status: 'in-development',
     statusLabel: 'In development',
-    category: 'Social automation',
+    category: 'Social Automation',
     description:
       'A planned social media automation product for consistent posting, cleaner campaigns, and less manual wrangling.',
     audience: 'Small businesses and consultants who need repeatable social publishing workflows.',
@@ -100,7 +100,7 @@ export const products = [
     name: 'MediCafe',
     status: 'in-development',
     statusLabel: 'In development',
-    category: 'Medical operations',
+    category: 'Healthcare Revenue Cycle Management',
     description:
       'A medical operations concept in development. It is unavailable and is not accepting production medical or patient data.',
     audience: 'Medical practices and operations teams managing repetitive billing workflows.',

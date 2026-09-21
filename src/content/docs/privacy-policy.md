@@ -70,7 +70,7 @@ We use administrative, technical, and organizational measures designed for the n
 
 You may update available account information and request access, correction, deletion, restriction, or a copy of personal information associated with you. Available rights depend on your location and applicable law and may be subject to exceptions. We may verify your identity and authority before acting.
 
-Email [support@cafecito.tech](mailto:support@cafecito.tech) with the subject **Privacy Request**. Do not use a public GitHub issue for a privacy request or confidential information; GitHub is reserved for public software bugs and feature feedback.
+Use the [contact page](/contact) and include the subject **Privacy Request**. Do not use a public GitHub issue for a privacy request or confidential information; GitHub is reserved for public software bugs and feature feedback.
 
 ## Children
 
@@ -92,4 +92,4 @@ Attn: Project Cafecito Privacy
 Mercer Island, WA 98040  
 United States
 
-Email [support@cafecito.tech](mailto:support@cafecito.tech) with the subject **Privacy Request**.
+Use the [contact page](/contact) and include the subject **Privacy Request**.

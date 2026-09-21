@@ -8,7 +8,7 @@ body:
       value: |
         GitHub issues are public. Do not include passwords, API keys, credentials, identification documents, sensitive personal information, confidential business details, or complete copyrighted works.
 
-        For legal, privacy, publisher, copyright, correction, abuse, security, or other confidential matters, use https://cafecito.tech/docs/contact/.
+        For legal, privacy, publisher, copyright, correction, abuse, security, or other confidential matters, use https://cafecito.tech/contact/.
   - type: dropdown
     id: category
     attributes:

@@ -35,7 +35,7 @@ Generated attributes and Cafecito-published analysis may be incomplete, inaccura
 
 Authors, sources, rights holders, subjects, and users may request review of incorrect attribution; source corrections, retractions, or withdrawals; incorrect generated attributes or mistaken identity; source restrictions or opt-outs; privacy, safety, or doxxing concerns; alleged infringement; or licensing discussions.
 
-Email [support@cafecito.tech](mailto:support@cafecito.tech) with the most relevant subject: **Content Rights Request**, **Publisher Opt-Out**, **Correction Request**, or **Copyright Notice**. Identify the affected canonical URL or Cafecito record and the requested action. Do not send credentials, unnecessary sensitive information, or complete copies of the disputed work.
+Use the [contact page](/contact) with the most relevant subject: **Content Rights Request**, **Publisher Opt-Out**, **Correction Request**, or **Copyright Notice**. Identify the affected canonical URL or Cafecito record and the requested action. Do not send credentials, unnecessary sensitive information, or complete copies of the disputed work.
 
 ## Review and outcomes
 

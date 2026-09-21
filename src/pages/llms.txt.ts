@@ -50,8 +50,8 @@ Cafecito uses a changing catalog of public-information and publicly available so
 
 ## Contact
 
-- Private contact: https://cafecito.tech/docs/contact/
-- Report a public software bug: https://github.com/soumitsalman/cafecito/issues/new?template=general_contact.yml
+- Private contact: https://cafecito.tech/contact/
+- Report a public software bug: https://github.com/projectcafecito/cafecito/issues/new?template=general_contact.yml
 
 ## Legal and policies
 

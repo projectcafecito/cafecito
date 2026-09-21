@@ -22,4 +22,4 @@ Cafecito seeks to:
 - retain information according to legitimate operational, security, compliance, and dispute needs; and
 - use reasonable safeguards appropriate to the information and Services.
 
-Public availability does not make all information accurate, risk-free, or free of third-party rights. Collection or inclusion is not endorsement by Cafecito or by the source. Submit requests through the [contact page](/docs/contact/) or the [Publisher Requests](/docs/publisher-requests/) process.
+Public availability does not make all information accurate, risk-free, or free of third-party rights. Collection or inclusion is not endorsement by Cafecito or by the source. Submit requests through the [contact page](/contact) or the [Publisher Requests](/docs/publisher-requests/) process.

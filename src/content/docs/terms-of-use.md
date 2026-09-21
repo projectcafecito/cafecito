@@ -133,4 +133,4 @@ Attn: Project Cafecito
 Mercer Island, WA 98040  
 United States
 
-Email [support@cafecito.tech](mailto:support@cafecito.tech) with the subject **Legal Question**. Do not include credentials or unnecessary sensitive information.
+Use the [contact page](/contact) and include the subject **Legal Question**. Do not include credentials or unnecessary sensitive information.

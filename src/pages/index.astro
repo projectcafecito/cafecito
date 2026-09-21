@@ -2,69 +2,140 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import { inDevelopmentProducts, liveProducts } from '../data/products';
 ---
 
 <BaseLayout
-  title="Project Cafecito | Practical AI products and APIs"
-  description="Project Cafecito builds AI products for public-information discovery, market-intelligence research, and planned social and medical-operations workflows."
+  title="Project Cafecito | Tools for practical intelligence"
+  description="Project Cafecito builds practical intelligence tools for public-information discovery, market research, and operational workflows."
   keywords="AI automation, news API, market intelligence, social media automation, medical billing automation, Project Cafecito"
 >
   <Nav />
-  <header class="hero">
-    <div class="container">
-      <section class="hero-frame hero-frame--cafecito" role="img" aria-label="Coffee and AI visual for Project Cafecito">
-        <article class="hero-copy">
-          <p class="eyebrow">Practical AI &amp; Tools for Small Business</p>
-          <h1>Automation for business owners who would rather do real work.</h1>
-          <p>We build focused, API-first AI tools and workflows for selected repetitive operational tasks. Product capabilities, availability, and suitability vary by offering.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="/products/">Explore products</a><a class="btn btn-secondary" href="https://developer.cafecito.tech">Explore APIs and MCPs</a></div>
-        </article>
-      </section>
-    </div>
-  </header>
   <main>
-    <section class="section section--spacious" id="products">
+    <header class="option-hero">
+      <div class="container option-hero-content">
+        <p class="eyebrow">Project Cafecito</p>
+        <h1>Tools for practical intelligence.</h1>
+        <p class="option-hero-question">What would you like to make easier?</p>
+        <a class="btn btn-secondary" href="/products/">Browse all products</a>
+      </div>
+    </header>
+
+    <section class="option-products" aria-labelledby="live-products-heading">
       <div class="container">
-        <div class="section-title"><h2>Products</h2><p>All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase. “Live” means publicly accessible, not guaranteed uptime or instantaneous delivery. <a href="/products/">See the full product lineup.</a></p></div>
-        <div class="products">
-          <a class="product shared-panel shared-panel--interactive" href="/beans/"><img class="product-icon" src="/images/beans.png" alt="Beans product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--mint">Live</span><span class="tag shared-badge shared-badge--caramel">News API</span></div><h3>Beans</h3><p>News &amp; blog aggregator API with semantic search, smart filters, and MCP support - so your AI workflows stay fed with relevant information, not noise.</p></div></a>
-          <a class="product shared-panel shared-panel--interactive" href="/espresso/"><img class="product-icon" src="/images/espresso.png" alt="Espresso product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--mint">Live</span><span class="tag shared-badge shared-badge--caramel">Intelligence</span></div><h3>Espresso</h3><p>Curated market intelligence suite - API, publications, and social digests with event signals, tags, and relationships for dashboards and AI agents.</p></div></a>
-          <article class="product shared-panel"><img class="product-icon" src="/images/cortado.png" alt="Cortado product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--subtle">In development</span><span class="tag shared-badge shared-badge--caramel">Social Automation</span></div><h3>Cortado</h3><p>Planned social media automation for consistent posting and cleaner campaign workflows. Not yet available.</p></div></article>
-          <article class="product shared-panel"><img class="product-icon" src="/images/medicafe.png" alt="MediCafe product icon" /><div><div class="product-tags"><span class="tag shared-badge shared-badge--subtle">In development</span><span class="tag shared-badge shared-badge--caramel">Medical Ops</span></div><h3>MediCafe</h3><p>In development and unavailable. MediCafe is not accepting production medical or patient data.</p></div></article>
+        <div class="option-section-heading">
+          <h2 id="live-products-heading">Available now</h2>
+        </div>
+        <div class="option-product-grid">
+          {liveProducts.map((product) => (
+            <article class={`option-product-card option-product-card--${product.slug}`}>
+              <img src={product.image} alt={`${product.name} product icon`} />
+              <div class="option-product-card-content">
+                <div class="option-product-card-meta">
+                  <span class="shared-badge shared-badge--mint">{product.statusLabel}</span>
+                  <span>{product.category}</span>
+                </div>
+                <h3>{product.name}</h3>
+                {product.slug === 'beans' ? (
+                  <p>Find relevant news and blog sources for your workflow.</p>
+                ) : (
+                  <p>Track market signals, events, and relationships in one place.</p>
+                )}
+                <a class="btn btn-primary" href={`/${product.slug}/`}>Explore {product.name}</a>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
-    <section class="section section--spacious" id="why-cafecito">
+
+    <section class="option-roadmap" aria-labelledby="roadmap-heading">
       <div class="container">
-        <div class="section-title"><h2>Why Cafecito</h2><p>Less busywork. More useful software.</p></div>
-        <div class="proof-grid">
-          <article class="proof-card shared-panel"><h3>Practical by default</h3><p>We focus on the repetitive work that slows down small teams and independent operators.</p></article>
-          <article class="proof-card shared-panel"><h3>API-first tools</h3><p>Our products are designed to fit into existing workflows, dashboards, and AI agents.</p></article>
-          <article class="proof-card shared-panel"><h3>Bootstrapped and focused</h3><p>We keep the products lean, experimental, and cost-conscious as they grow.</p></article>
-        </div>
-      </div>
-    </section>
-    <section class="section section--spacious">
-      <div class="container">
-        <article class="founder-signal shared-panel">
-          <img src="/images/about-us.png" alt="Illustration of Project Cafecito founders" />
+        <div class="option-roadmap-heading">
           <div>
-            <p class="eyebrow">A small team with practical experience</p>
-            <h2>Built by engineering leaders who got tired of operational busywork.</h2>
-            <p>Project Cafecito is run by two technology and operations veterans who build tools for the work behind the work. Learn how the founders think, what the company does, and where the products are headed.</p>
-            <div class="about-actions"><a class="btn btn-primary" href="/docs/about-us/">Meet the founders</a><a class="btn btn-secondary" href="/docs/overview/">Our company</a></div>
+            <h2 id="roadmap-heading">Brewing next</h2>
           </div>
-        </article>
-      </div>
-    </section>
-    <section class="section section--spacious">
-      <div class="container">
-        <article class="closing-cta shared-panel">
-          <div><p class="eyebrow">Ready when you are</p><h2>Find the tool that fits your workflow.</h2><p>Explore the product lineup, read what we are building, or get in touch with the team.</p></div>
-          <div class="hero-actions"><a class="btn btn-primary" href="/products/">Explore products</a><a class="btn btn-secondary" href="/blogs/">Read updates</a><a class="btn btn-secondary" href="/docs/contact/">Contact us</a></div>
-        </article>
+          <a href="/products/">See the lineup <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="option-roadmap-items">
+          {inDevelopmentProducts.map((product) => (
+            <article class="option-roadmap-item">
+              <img src={product.image} alt="" />
+              <div>
+                <h3>{product.name}</h3>
+                <p>{product.category}</p>
+              </div>
+              <span class="shared-badge shared-badge--subtle">{product.statusLabel}</span>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   </main>
   <Footer />
 </BaseLayout>
+
+<style>
+  .option-hero {
+    min-height: 0;
+    display: grid;
+    align-items: end;
+    padding: 1.75rem 0;
+    background:
+      linear-gradient(90deg, rgba(18, 11, 7, 0.96) 0%, rgba(18, 11, 7, 0.73) 53%, rgba(18, 11, 7, 0.35) 100%),
+      url('/images/cafecito-banner.png') center / cover no-repeat;
+    border-bottom: 1px solid rgba(234, 216, 191, 0.16);
+  }
+
+  .option-hero-content { max-width: 1120px; }
+  .option-hero h1 { max-width: 18ch; margin: 0.5rem 0 0.65rem; font-size: clamp(2.4rem, 5vw, 4.2rem); }
+  .option-hero-question { max-width: 43ch; margin: 0 0 1.5rem; color: rgba(245, 239, 229, 0.88); font-size: clamp(1.2rem, 2.4vw, 1.45rem); line-height: 1.5; }
+
+  .option-products { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+  .option-section-heading { margin-bottom: 1.5rem; }
+  .option-section-heading h2, .option-roadmap h2 { margin-top: 0.45rem; font-size: clamp(1.8rem, 4vw, 3.1rem); }
+  .option-product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+
+  .option-product-card {
+    min-height: 405px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border: 1px solid rgba(234, 216, 191, 0.23);
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(72, 41, 22, 0.94), rgba(18, 11, 7, 0.98));
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+  }
+
+  .option-product-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(18, 11, 7, 0.96), rgba(18, 11, 7, 0.04) 72%); pointer-events: none; }
+  .option-product-card--espresso { background: linear-gradient(145deg, rgba(18, 58, 56, 0.88), rgba(18, 11, 7, 0.98)); }
+  .option-product-card > img { position: absolute; top: 1.5rem; right: 1.5rem; width: clamp(130px, 18vw, 210px); height: clamp(130px, 18vw, 210px); object-fit: cover; border: 1px solid rgba(245, 239, 229, 0.22); border-radius: 28px; transform: rotate(7deg); box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3); }
+  .option-product-card-content { position: relative; z-index: 1; width: 100%; padding: 1.6rem; }
+  .option-product-card-meta { display: flex; align-items: center; gap: 0.55rem; color: rgba(245, 239, 229, 0.66); font-size: 0.82rem; }
+  .option-product-card h3 { margin: 0.7rem 0 0.35rem; font-size: clamp(2rem, 4vw, 3.1rem); }
+  .option-product-card p { max-width: 28ch; margin: 0; color: rgba(245, 239, 229, 0.88); font-size: 1rem; line-height: 1.5; }
+  .option-product-card .btn { margin-top: 1.3rem; }
+
+  .option-roadmap { padding: 2.5rem 0 4.5rem; }
+  .option-roadmap-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+  .option-roadmap-heading > a { color: var(--latte); }
+  .option-roadmap-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; }
+  .option-roadmap-item { display: grid; grid-template-columns: 54px 1fr auto; align-items: center; gap: 0.8rem; padding: 0.8rem; border: 1px solid rgba(234, 216, 191, 0.17); border-radius: 16px; background: rgba(46, 22, 11, 0.36); }
+  .option-roadmap-item img { width: 54px; height: 54px; border-radius: 12px; object-fit: cover; }
+  .option-roadmap-item h3 { font-size: 1.1rem; }
+  .option-roadmap-item p { margin: 0.25rem 0 0; color: rgba(245, 239, 229, 0.63); font-size: 0.85rem; }
+
+  @media (max-width: 720px) {
+    .option-hero { padding: 1.75rem 0; background-position: 63% center; }
+    .option-product-grid, .option-roadmap-items { grid-template-columns: 1fr; }
+    .option-product-card { min-height: 370px; }
+  }
+
+  @media (max-width: 460px) {
+    .option-roadmap-heading { align-items: flex-start; flex-direction: column; }
+    .option-roadmap-item { grid-template-columns: 46px 1fr; }
+    .option-roadmap-item img { width: 46px; height: 46px; }
+    .option-roadmap-item .shared-badge { grid-column: 2; justify-self: start; }
+  }
+</style>

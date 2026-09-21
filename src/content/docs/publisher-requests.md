@@ -11,7 +11,7 @@ status: effective
 
 Publishers, source operators, authors, rights holders, and their authorized representatives may request source restrictions, opt-outs, attribution changes, corrections, removals, or licensing discussions.
 
-Email **support@cafecito.tech** using **Publisher Opt-Out**, **Publisher Licensing**, or **Content Rights Request**. Identify the requester, authority to act, affected domains or works, exact Cafecito and canonical source URLs, requested action, and supporting rights or factual information.
+Use the [contact page](/contact) and include **Publisher Opt-Out**, **Publisher Licensing**, or **Content Rights Request**. Identify the requester, authority to act, affected domains or works, exact Cafecito and canonical source URLs, requested action, and supporting rights or factual information.
 
 Cafecito may verify identity and authority, clarify scope, preserve necessary compliance records, and apply an appropriate restriction, correction, annotation, suppression, or removal. A request concerning one use does not necessarily resolve all uses. Collection, analysis, storage, summarization, API distribution, customer display, retrieval-augmented generation, model training, and media rights may require separate authorization.
 

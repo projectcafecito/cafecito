@@ -17,5 +17,6 @@ export default defineConfig({
   redirects: {
     '/company/': '/docs/overview/',
     '/docs/company-info/': '/docs/overview/',
+    '/docs/contact/': '/contact/',
   },
 });

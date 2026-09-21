@@ -25,6 +25,21 @@
 .content-prose h2, .content-prose h3 { margin-top: 2.25rem; }
 .content-prose a { color: var(--caramel); text-decoration: underline; }
 .content-prose img { max-width: 100%; border-radius: 16px; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.1rem 0; }
+.contact-action { display: inline-flex; align-items: center; gap: .4rem; min-height: 0; padding: .5rem .78rem; color: #2a1308; background: linear-gradient(135deg, #e6b677, #cf914d); border: 0; border-radius: 7px; font: inherit; font-size: .875rem; font-weight: 600; line-height: 1.2; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; }
+.content-prose .contact-action { color: #2a1308; text-decoration: none; }
+.contact-action:hover { color: #2a1308; filter: brightness(1.05); text-decoration: none; transform: translateY(-1px); box-shadow: 0 6px 14px rgba(0, 0, 0, .24); }
+.contact-action-icon { width: 1em; height: 1em; fill: none; stroke: #2a1308; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contact-guidance { max-width: 68ch; color: rgba(245, 239, 229, .7); font-size: .95rem; }
+.contact-dialog { width: min(840px, calc(100% - 2rem)); max-height: min(900px, calc(100dvh - 2rem)); padding: 0; color: var(--foam); background: var(--ink); border: 1px solid rgba(234, 216, 191, .3); border-radius: 18px; box-shadow: 0 24px 60px rgba(0, 0, 0, .55); }
+.contact-dialog::backdrop { background: rgba(8, 5, 3, .72); backdrop-filter: blur(3px); }
+.contact-dialog-content { max-height: inherit; overflow: auto; padding: 1.25rem; }
+.contact-dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.contact-dialog-header h2 { margin: 0; }
+.contact-dialog-header p { margin: .15rem 0 0; color: rgba(245, 239, 229, .68); font-size: .9rem; }
+.contact-dialog-close { width: 2.25rem; height: 2.25rem; padding: 0; color: var(--foam); background: transparent; border: 1px solid rgba(245, 239, 229, .3); border-radius: 50%; font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.content-prose .contact-form { display: block; width: 100%; min-height: 650px; margin: 1.25rem 0 0; border: 0; }
+.content-prose .contact-form-fallback { margin: .65rem 0 0; color: rgba(245, 239, 229, .62); font-size: .9rem; }
 .tag-list { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
 .tag-list span { border: 1px solid var(--line); border-radius: 999px; padding: .2rem .55rem; color: var(--latte); font-size: .82rem; }
 .product-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .45rem; }

@@ -13,7 +13,7 @@ Cafecito respects intellectual-property rights and reviews sufficiently detailed
 
 ## Copyright notice
 
-Email **support@cafecito.tech** with subject **Copyright Notice** and include:
+Use the [contact page](/contact) and include the subject **Copyright Notice**, plus:
 
 1. identification of the copyrighted work, or a representative list for multiple works;
 2. the exact Cafecito URL, API record identifier, publication, and source URL for the material at issue;
@@ -26,4 +26,4 @@ Email **support@cafecito.tech** with subject **Copyright Notice** and include:
 
 If Cafecito restricts material after a complaint, an affected provider may send a counter-notice identifying the material and its former location, explaining under penalty of perjury why the restriction resulted from mistake or misidentification, providing contact details, consenting to the jurisdiction required by applicable law, accepting service of process from the complainant, and including a physical or electronic signature.
 
-Cafecito may restrict or remove material, notify affected parties, restore material when appropriate, preserve relevant records, and suspend repeat infringers. Publishing this policy does not itself establish eligibility for any statutory safe harbor. **support@cafecito.tech is not represented as a registered statutory or government agent.**
+Cafecito may restrict or remove material, notify affected parties, restore material when appropriate, preserve relevant records, and suspend repeat infringers. Publishing this policy does not itself establish eligibility for any statutory safe harbor. The [contact page](/contact) is not represented as a registered statutory or government agent.

@@ -51,10 +51,10 @@ Do not probe vulnerabilities without written authorization, disrupt or overload 
 
 ## Your operational duties
 
-Protect credentials, preserve available source links and attribution, independently evaluate consequential output, and promptly act on correction, restriction, or deletion instructions. Contact Cafecito before proceeding when permitted use is unclear.
+Protect credentials, preserve available source links and attribution, independently evaluate consequential output, and promptly act on correction, restriction, or deletion instructions. Use the [contact page](/contact) before proceeding when permitted use is unclear.
 
 ## Enforcement and reporting
 
 Cafecito may investigate suspected violations, limit or block requests, restrict output, suspend or terminate accounts, preserve relevant records, and cooperate with lawful investigations. We may act immediately when needed to address legal, security, rights, or safety risk.
 
-Email [support@cafecito.tech](mailto:support@cafecito.tech) with the subject **Abuse Report**. Do not include credentials or unnecessary sensitive information.
+Use the [contact page](/contact) and include the subject **Abuse Report**. Do not include credentials or unnecessary sensitive information.

@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact | Project Cafecito"
+  description="Private contact channels for Project Cafecito support, legal, privacy, publisher, correction, abuse, and security matters."
+>
+  <Nav />
+  <main class="content-shell">
+    <article>
+      <div class="content-prose">
+        <h1>Contact Project Cafecito</h1>
+
+        <div class="contact-actions">
+          <a class="contact-action" href="https://github.com/projectcafecito/cafecito/issues/new?template=general_contact.yml">
+            <svg class="contact-action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9V7a4 4 0 0 1 8 0v2M5 13h14M7 13v3a5 5 0 0 0 10 0v-3M9 9h6v4H9zM6 7h.01M18 7h.01" /></svg>
+            <span>Bug report</span>
+          </a>
+          <button class="contact-action" type="button" data-contact-dialog-open>
+            <svg class="contact-action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.4 9.4 0 0 1-3.8-.8L3 21l1.8-4.6A8.2 8.2 0 0 1 3 11.5a8.5 8.5 0 0 1 9-8.5 8.5 8.5 0 0 1 9 8.5Z" /><path d="M8 12h.01M12 12h.01M16 12h.01" /></svg>
+            <span>Private inquiry</span>
+          </button>
+        </div>
+
+        <p class="contact-guidance">Use a private inquiry for support, legal, privacy, publisher, correction, abuse, copyright, security, partnership, or other confidential matters. GitHub reports are public; do not include sensitive information there.</p>
+
+        <dialog class="contact-dialog" aria-labelledby="private-inquiry-heading" data-contact-dialog>
+          <div class="contact-dialog-content">
+            <div class="contact-dialog-header">
+              <div>
+                <h2 id="private-inquiry-heading">Private inquiry</h2>
+                <p>For support and confidential requests.</p>
+              </div>
+              <form method="dialog"><button class="contact-dialog-close" aria-label="Close private inquiry form">×</button></form>
+            </div>
+            <iframe
+              class="contact-form"
+              data-tally-src="https://tally.so/r/lbpkA5"
+              title="Contact Project Cafecito"
+              width="100%"
+              height="650"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+            <p class="contact-form-fallback">Having trouble with the form? <a href="https://tally.so/r/lbpkA5">Open it in a new tab</a>.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script is:inline src="https://tally.so/widgets/embed.js"></script>
+<script is:inline>
+  const contactDialog = document.querySelector('[data-contact-dialog]');
+  const openContactDialog = document.querySelector('[data-contact-dialog-open]');
+
+  openContactDialog?.addEventListener('click', () => contactDialog?.showModal());
+  contactDialog?.addEventListener('click', (event) => {
+    if (event.target === contactDialog) contactDialog.close();
+  });
+</script>

@@ -54,6 +54,7 @@ import { inDevelopmentProducts, liveProducts } from '../../data/products';
         <div class="product-catalog-grid">
           {inDevelopmentProducts.map((product) => <ProductCard product={product} />)}
         </div>
+        <p class="product-disclaimer">All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase. “Live” means publicly accessible, not guaranteed uptime or instantaneous delivery. <a href="/products/">See the full product lineup.</a></p>
       </div>
     </section>
   </main>
@@ -217,5 +218,16 @@ import { inDevelopmentProducts, liveProducts } from '../../data/products';
     .product-catalog-grid {
       grid-template-columns: 1fr;
     }
+  }
+  .product-disclaimer {
+    max-width: 78ch;
+    margin: 1.5rem 0 0;
+    color: rgba(245, 239, 229, 0.5);
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .product-disclaimer a {
+    color: inherit;
   }
 </style>
