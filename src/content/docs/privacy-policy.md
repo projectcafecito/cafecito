@@ -1,15 +1,15 @@
 ---
 title: Privacy Policy
 description: How Project Cafecito handles account, API, website, application, support, and public-source information.
-policyVersion: "2026-09-16"
-effectiveDate: 2026-09-16
-lastUpdated: 2026-09-16
+policyVersion: "2026-09-21"
+effectiveDate: 2026-09-21
+lastUpdated: 2026-09-21
 status: effective
 ---
 
 # Privacy Policy
 
-**Effective date:** September 16, 2026
+**Effective date:** September 21, 2026
 
 This Privacy Policy explains how **Strategic Implementation Advising, LLC**, doing business as **Project Cafecito** (**Cafecito**, **we**, **us**, or **our**), handles personal information in connection with Cafecito websites, applications, APIs, MCP services, developer tools, support, and publications, including Beans and Espresso (collectively, the **Services**).
 
@@ -28,7 +28,7 @@ Depending on the Service and how you use it, we may handle:
 - **Public-source information:** names, professional information, quotations, allegations, events, images, and other information appearing in public-information and publicly available sources/outlets.
 - **Generated and derived information:** classifications, categories, entities, sentiment, scores, summaries, relationships, Events, Signals, and publication analysis created from available information.
 
-Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily.
+Cafecito uses a changing catalog of public-information and publicly available sources/outlets. Source coverage, availability, and update timing vary.
 
 Please do not place secrets, credentials, sensitive personal information, or confidential material in queries, submitted URLs, or support messages unless the applicable Service and agreement expressly support that use.
 

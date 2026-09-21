@@ -259,9 +259,9 @@ GET /articles/{article_id}/similar
 GET /articles/{article_id}/mentions
 ```
 
-This keeps the home page fast and lets the detail view provide the useful extras: available body content, related reading, and external observations. Always retain the original article `url` for attribution and the outbound link.
+This keeps the home page compact and lets the detail view request available body content, related reading, and external observations. Always retain the original article `url` for attribution and the outbound link.
 
-`full_content=true` requests content that may be available for the selected record. It does not grant ownership or downstream display, redistribution, bulk archival, resale, permanent retrieval storage, or model-training rights. Retrieve article detail when a reader selects it, preserve attribution and the canonical-source link, and assess the rights required for your use rather than treating the option as a bulk-content license.
+`full_content=true` requests content that may be available for the selected record. It does not grant ownership or downstream display, redistribution, bulk archival, resale, permanent retrieval storage, or model-training rights. Do not rely on the parameter for a source unless Cafecito has a documented basis to return that field for your intended use. Retrieve article detail when a reader selects it, preserve attribution and the canonical-source link, and assess the rights required for your use rather than treating the option as a bulk-content license.
 
 ## The short version
 

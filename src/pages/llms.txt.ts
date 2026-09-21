@@ -6,7 +6,7 @@ const content = `# Project Cafecito
 
 All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase.
 
-Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily. This does not imply source endorsement, complete coverage, or unrestricted content rights.
+Cafecito uses a changing catalog of public-information and publicly available sources/outlets. This does not imply source endorsement, complete coverage, a fixed update frequency, or unrestricted content rights.
 
 ## Canonical sources
 

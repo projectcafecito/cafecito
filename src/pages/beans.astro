@@ -4,12 +4,12 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
 const features = [
-  ['📡 Scale & Coverage', 'Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily. Coverage varies and does not imply source endorsement or unrestricted content rights.'],
-  ['🧠 Semantic Search', 'Natural language vector-based semantic search with tunable accuracy. Go beyond keywords — ask questions in plain text and pull deeply relevant articles from thousands of sources. Ideal for powering AI agents, RAG systems, and intelligent automation workflows.'],
-  ['🔍 Intelligent Filtering', 'Rich, multi-dimensional filtering by categories, named entities, geographic regions, content types, sources, and time ranges. Designed for precise control while remaining simple to use in real AI and analytics workflows.'],
-  ['📈 Trend Scoring', 'Every article is automatically scored and ranked based on real social engagement signals. Surface what’s actually gaining traction instead of just the most recent content.'],
-  ['🏷️ Built-in AI Enrichment', 'Automatic extraction of named entities, sentiment, topics, and regions for every article. Ready for analytics dashboards, AI agents, and downstream pipelines — no extra processing layers required.'],
-  ['🔗 Story Propagation Mapping', 'Links related articles across public-information sources/outlets. Track how stories spread and observe narrative shifts using regularly updated data.'],
+  ['📡 Coverage', 'Beans searches a changing catalog of public-information sources/outlets. Coverage, availability, and update timing vary and do not imply source endorsement or unrestricted content rights.'],
+  ['🧠 Semantic Search', 'Natural-language semantic search with an adjustable relevance threshold. Results can be incomplete or not relevant to every query; verify material information against canonical sources.'],
+  ['🔍 Filtering', 'Filter by categories, named entities, geographic regions, content types, sources, and time ranges. Available fields vary by record.'],
+  ['📈 Trend Context', 'Selected records may include available attention observations and related-coverage context. These observations do not establish accuracy, popularity, or completeness.'],
+  ['🏷️ Automated Enrichment', 'Selected records may include automated entities, sentiment, topics, and regions. These classifications can be unavailable or incorrect and should be verified for consequential use.'],
+  ['🔗 Related Coverage', 'Related articles may be linked across public-information sources/outlets when available. Relationships are context, not a guarantee of a complete narrative.'],
 ];
 const beansSchema = {
   "@type": "SoftwareApplication",
@@ -39,9 +39,9 @@ const beansSchema = {
         <article class="hero-copy">
           <p class="eyebrow">Project Cafecito / Beans</p>
           <h1>News &amp; Blogs API for AI Workflows</h1>
-          <p>Beans is a public-information discovery and search API for developers, AI agents, research tools, and dashboards. Use semantic search, structured filters, and JSON or MCP responses to find relevant source material from data updated daily.</p>
+          <p>Beans is a public-information discovery and search API for developers, AI agents, research tools, and dashboards. Use semantic search, structured filters, and JSON or MCP responses to explore available source material. Coverage, update timing, and outputs vary by source and record.</p>
           <div class="hero-badges">
-            <span class="shared-badge">MCP</span><span class="shared-badge">JSON</span><span class="shared-badge">Semantic Search</span><span class="shared-badge">Nearly 15,000 sources/outlets</span><span class="shared-badge shared-badge--ghost-mint">Live</span>
+            <span class="shared-badge">MCP</span><span class="shared-badge">JSON</span><span class="shared-badge">Semantic Search</span><span class="shared-badge">Variable source coverage</span><span class="shared-badge shared-badge--ghost-mint">Live</span>
           </div>
         </article>
       </section>

@@ -12,7 +12,7 @@ It is my pleasure to introduce [Project Cafecito](https://cafecito.tech/)'s next
 
 The API is part of the larger Espresso product suite, which also includes Espresso Publications: [Editorials](https://espresso.cafecito.tech/), [X](https://x.com/espressovibz), and [Threads](https://www.threads.com/@espresso.sips), our curated digests and deeper human-readable analysis built on the same high-signal intelligence layer.
 
-Think of it as concentrated shots of structured intelligence: event digests, synthesized signals, tags, and relationships, served fresh for dashboards, monitoring workflows, and AI agents.
+Think of it as concentrated shots of structured intelligence: event digests, synthesized signals, tags, and relationships for dashboards, monitoring workflows, and AI agents. Outputs can be incomplete or incorrect and are not a substitute for verifying material information against available evidence.
 
 ![Espresso API & MCP banner](/images/espresso-banner.png)
 
@@ -172,11 +172,11 @@ Full documentation is available in the [Developer Portal](https://developer.cafe
 
 ## Who Is This For?
 
-If you're building AI agents, executive dashboards, automated briefings, or RAG pipelines that need real business, market, and policy context, Espresso is the noise-free high-signal layer you've been missing.
+If you're building AI agents, executive dashboards, automated briefings, or RAG pipelines that need business, market, and policy research context, Espresso can provide structured starting points and supporting evidence.
 
 ## Current Status
 
-v0.1 is live and open. It's early, and we're still pruning bugs and adding more signals, but it's already useful enough that I'm using it internally.
+v0.1 is publicly accessible. It is early, and outputs may be incomplete or incorrect; verify material information and do not use it as the sole basis for a consequential decision.
 
 [Try Espresso here](https://developer.cafecito.tech/api/espresso) or [get your API key and full docs](https://developer.cafecito.tech/howtos/api-keys).
 
@@ -204,7 +204,7 @@ See you in the comments.
 
 Oh, by the way, we just added a new route for tracking content propagation across publishers and mentions on social media. It's good shit. [Check it out](https://developer.cafecito.tech/api/beans).
 
-Espresso API is the structured, curated market intelligence layer. It takes multiple information sources, cross-correlates them, and gives you the data that actually matters for business decision-making, without all the pointless crying, whining, bitching, and moaning noise.
+Espresso API is the structured, curated market-intelligence layer. It can combine available information into Events and Signals for research and monitoring. Verify material information and do not treat its output as professional advice or the sole basis for a consequential decision.
 
 In short:
 

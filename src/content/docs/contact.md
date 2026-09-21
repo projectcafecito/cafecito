@@ -5,19 +5,17 @@ description: Private contact channels for Project Cafecito support, legal, priva
 
 # Contact Project Cafecito
 
-Email **support@cafecito.tech** for private or confidential matters. Use the most relevant subject line:
+<iframe
+  src="https://tally.so/r/lbpkA5"
+  title="Contact Project Cafecito"
+  width="100%"
+  height="1100"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+>Loading…</iframe>
 
-- `General Support`
-- `Legal Question`
-- `Privacy Request`
-- `Copyright Notice`
-- `Publisher Opt-Out`
-- `Publisher Licensing`
-- `Correction Request`
-- `Abuse Report`
-- `Security Report`
-
-Include enough information to identify the product, URL, source, record, or issue. Do not send API keys, passwords, credentials, identification documents, unnecessary sensitive data, or complete copyrighted works. Cafecito may request limited additional information needed to verify and resolve a request.
+If the form does not load, [open the contact form in a new tab](https://tally.so/r/lbpkA5).
 
 ## Public software bugs
 

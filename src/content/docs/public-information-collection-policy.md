@@ -1,17 +1,17 @@
 ---
 title: Public-Information Collection Policy
 description: Principles governing Cafecito collection and processing of public information.
-policyVersion: "2026-09-16"
-effectiveDate: 2026-09-16
-lastUpdated: 2026-09-16
+policyVersion: "2026-09-21"
+effectiveDate: 2026-09-21
+lastUpdated: 2026-09-21
 status: effective
 ---
 
 # Public-Information Collection Policy
 
-Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily.
+Cafecito uses a changing catalog of public-information and publicly available sources/outlets.
 
-This figure describes the approximate source catalog, not unique publishers, guaranteed availability, complete coverage, source endorsement, or unrestricted content rights. Source availability and coverage can change.
+The catalog is not a count of unique publishers and does not promise availability, complete coverage, a fixed update frequency, source endorsement, or unrestricted content rights. Source availability and coverage can change.
 
 Cafecito seeks to:
 

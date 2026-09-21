@@ -1,6 +1,6 @@
 ---
 title: "Launching Beans"
-description: "News API & MCP for AI agents, search workflows, and trend dashboards using public information updated daily."
+description: "News API & MCP for AI agents, search workflows, and trend dashboards using available public information."
 publishedAt: 2026-04-08
 type: announcement
 tags: ["beans", "api", "mcp", "news", "agents"]
@@ -22,27 +22,27 @@ Beans focuses on broad source coverage, precise search, useful metadata, and tre
 
 The stuff that actually matters:
 
-- Vector search: Plug straight into your RAG agent. You can even adjust search accuracy.
+- Vector search: Plug straight into your RAG agent. You can adjust the relevance threshold; results can be incomplete or not relevant to every query.
 - Keyword search: Filter by people, products, places, companies, stock tickers, and categories.
-- Enriched tags and sentiment analysis: Avoid clickbait with 100+ categories, 24+ sentiments, and named entities extracted from the actual body of the content.
+- Enriched tags and sentiment analysis: Selected records can include automated categories, sentiments, and named entities. Treat these fields as context, not verified facts.
 - Story propagation mapping: See how different sources are publishing the same news. This one took some work and is still getting tuned.
-- Social media stats and trend scoring from real social signals: Find what the cool kids are talking about.
-- Nearly 15,000 sources/outlets: Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily. Source availability varies, and inclusion does not imply endorsement or unrestricted content rights.
+- Social media observations and trend context: Selected records may include available external observations. They do not establish accuracy, popularity, or completeness.
+- Source coverage: Cafecito uses a changing catalog of public-information and publicly available sources/outlets. Source availability and update timing vary, and inclusion does not imply endorsement or unrestricted content rights.
 
-**Coverage update — September 16, 2026:** coverage has grown substantially since the original launch. The current source figure replaces the earlier launch count and describes sources/outlets, not unique publishers.
+**Coverage note — September 21, 2026:** Cafecito no longer uses a fixed source-count claim in public materials. Any future quantitative coverage claim requires a dated, reproducible measurement using the published claim definition.
 
 ## Who Is This For?
 
 If you're building:
 
-- AI agents that need the latest data, not just something that matches a query.
+- AI agents that need to explore available public information alongside canonical-source verification.
 - A daily newsletter on a specific topic, person, place, or company.
 - Tools for tracking product launches from different tech startups and how to use them.
 - News trend intelligence dashboards.
 - A news app to take over the world.
 - Anything that lives and dies by "what's happening today."
 
-Then Beans is the missing piece you need.
+Then Beans may be a useful starting point for your workflow.
 
 ## Why We Built It
 

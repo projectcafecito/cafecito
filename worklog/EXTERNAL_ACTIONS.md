@@ -15,8 +15,9 @@
 1. Complete a verified data map, service-provider inventory, retention schedule, security-control inventory, and state privacy applicability assessment.
 2. Implement identity and authority checks proportionate to privacy, copyright, publisher, and correction requests.
 3. Establish documented restriction, correction, suppression, removal, appeal, and repeat-infringer procedures.
-4. Substantiate the nearly 15,000-source/outlet count and any freshness, accuracy, availability, or coverage claims.
+4. Before publishing any quantitative source-count, freshness, accuracy, availability, or coverage claim, create and retain the substantiation required by `MARKETING_CLAIMS_READINESS.md`.
 5. Review media, copyright/IP, privacy, defamation, cyber, Tech E&O, and contractual-liability insurance.
+6. Complete and retain the evidence and release gates in `CODE_IP_READINESS.md` before representing code/asset ownership, OSS compliance, or SBOM controls as complete.
 
 ## Priority 2: before monetization
 

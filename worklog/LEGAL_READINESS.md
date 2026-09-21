@@ -4,7 +4,7 @@
 
 ## Current posture
 
-All Cafecito products are currently available as free tier. Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily. Source availability does not itself establish downstream display, redistribution, archival, resale, dataset, retrieval-augmented generation, or training rights.
+All Cafecito products are currently available as free tier. Cafecito uses a changing catalog of public-information and publicly available sources/outlets; coverage, availability, and update timing vary. Source availability does not itself establish downstream display, redistribution, archival, resale, dataset, retrieval-augmented generation, or training rights.
 
 Public documents now use generic descriptions such as public-information collection systems, enrichment systems, source catalog, content storage, and API output layer. They do not disclose internal collection techniques or project identifiers.
 

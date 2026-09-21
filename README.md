@@ -1,14 +1,14 @@
 # Project Cafecito
 
-**Revolutionizing Operational Productivity for Independent Professionals and Micro Businesses**
+**Practical AI Products for Independent Professionals and Small Businesses**
 
 _Backed by Strategic Implementation Advising, LLC_
 
 ## Who We Are
 
-At **Project Cafecito**, we empower independent professionals and micro businesses with cutting-edge tools that automate and enhance everyday business operations. Our mission is to free you from the mundane, repetitive tasks of running a business, so you can focus on what truly matters — delivering exceptional work and growing your brand.
+Project Cafecito builds focused tools for independent professionals and small businesses. Our products address selected repetitive operational workflows and are designed to fit into existing ways of working.
 
-We leverage the power of artificial intelligence to develop productivity tools and AI agents that streamline your daily workflows. Our innovative solutions automate the tasks you don't want to deal with, letting you focus on what you do best.
+We use AI in products and workflows that help people explore information and automate selected tasks. Product capabilities and availability vary by offering.
 
 ---
 
@@ -20,12 +20,12 @@ Think of it as your content firehose with better manners.
 Beans is our aggregation and search service for news and blogs. It supports semantic query search, practical filtering, and clean JSON output.
 
 **Key Features:**
-- **📡 Scale & Coverage**: Fresh content from 7,000+ news and blog publishers, updated daily with zero crawling overhead.
-- **🧠 Semantic Search**: Natural language vector-based search with tunable accuracy. Ask questions in plain text and pull deeply relevant articles from thousands of sources.
+- **📡 Coverage**: Public-information discovery across a changing catalog of news and blog sources. Coverage and availability vary.
+- **🧠 Semantic Search**: Natural-language semantic search with an adjustable relevance threshold. Results may be incomplete or not relevant to every query.
 - **🔍 Intelligent Filtering**: Rich, multi-dimensional filtering by categories, named entities, geographic regions, content types, sources, and time ranges.
-- **📈 Trend Scoring**: Quantifies story momentum and propagation across the web.
-- **🏷️ Built-in AI Enrichment**: Entity extraction, topic modeling, and sentiment analysis included.
-- **🔗 Story Propagation Mapping**: Track how stories spread across sources.
+- **📈 Trend Context**: Available attention observations and related-coverage context for selected records.
+- **🏷️ Automated Enrichment**: Available entity, topic, and sentiment classifications for selected records.
+- **🔗 Story Propagation Mapping**: Related-coverage context when available.
 - **⚡ MCP-Friendly**: Designed for agent workflows, RAG systems, and intelligent automation.
 
 **Get Started**: [Beans API Documentation](https://developer.cafecito.tech/howtos/beans-howto)
@@ -33,7 +33,7 @@ Beans is our aggregation and search service for news and blogs. It supports sema
 ---
 
 ### ☕ Espresso — Market Intelligence Suite
-A live market intelligence suite for developers, analysts, dashboards, and AI agents.
+A publicly accessible market-intelligence suite for developers, analysts, dashboards, and AI agents. Its outputs support research and monitoring; they are not professional advice or a sole basis for consequential decisions.
 
 Espresso combines the API and MCP with event digests, synthesized signals, tags, relationships, and human-readable publications.
 

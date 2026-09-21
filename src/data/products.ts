@@ -35,7 +35,7 @@ export const products = [
     statusLabel: 'Live',
     category: 'News & blogs API',
     description:
-      'A public-information discovery and search service covering nearly 15,000 sources/outlets daily, with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support.',
+      'A public-information discovery and search service with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support. Coverage and availability vary by source and record.',
     audience: 'Developers, AI agents, and teams building RAG or media-monitoring workflows.',
     capabilities: ['News and blog aggregation', 'Browser News App', 'Semantic search', 'Rich filtering', 'JSON API and MCP'],
     image: '/images/beans.png',
@@ -63,7 +63,7 @@ export const products = [
     category: 'Market intelligence suite',
     description:
       'A curated intelligence suite combining the Espresso API and MCP with publications, event digests, synthesized signals, tags, and relationships.',
-    audience: 'Developers, analysts, dashboards, and AI agents that need high-signal market intelligence.',
+    audience: 'Developers, analysts, dashboards, and AI agents that need market-intelligence research and monitoring tools.',
     capabilities: ['Event and signal digests', 'Semantic search', 'Tags and relationships', 'API, MCP, and publications'],
     image: '/images/espresso.png',
     links: [

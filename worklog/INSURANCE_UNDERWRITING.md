@@ -5,7 +5,7 @@
 ## Current posture
 
 - Cafecito websites, applications, APIs, MCP services, and publications are currently available as free-tier offerings.
-- Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily.
+- Cafecito uses a changing catalog of public-information and publicly available sources/outlets; coverage, availability, and update timing vary.
 - Products provide public-information discovery, metadata, search, classifications, generated summaries and analysis, Events, Signals, and publications.
 - Paid services and revenue are not represented as currently operational.
 

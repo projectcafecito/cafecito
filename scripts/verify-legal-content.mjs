@@ -38,9 +38,9 @@ for (const file of files) {
 const terms = readFileSync(join(root, 'src/content/docs/terms-of-use.md'), 'utf8');
 const privacy = readFileSync(join(root, 'src/content/docs/privacy-policy.md'), 'utf8');
 const freeTier = 'All Cafecito products are currently available as free tier. When paid services are introduced, applicable pricing, billing, renewal, cancellation, refund, tax, and additional contract terms will be presented before purchase.';
-const sourceClaim = 'Cafecito collects data from nearly 15,000 different public-information and publicly available sources/outlets daily.';
+const sourceDisclosure = 'Cafecito uses a changing catalog of public-information and publicly available sources/outlets. Source coverage, availability, and update timing vary.';
 if (!terms.includes(freeTier)) failures.push('Terms omit the approved free-tier statement');
-if (!privacy.includes(sourceClaim)) failures.push('Privacy Policy omits the approved source-scale statement');
+if (!privacy.includes(sourceDisclosure)) failures.push('Privacy Policy omits the approved source-coverage disclosure');
 
 if (failures.length) {
   console.error(failures.join('\n'));
