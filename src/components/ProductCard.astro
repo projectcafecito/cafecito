@@ -7,9 +7,11 @@ interface Props {
 
 const { product } = Astro.props;
 const externalAttrs = (link: Product['links'][number]) => link.external ? { target: '_blank', rel: 'noreferrer' } : {};
+const overviewLink = product.links.find((link) => link.type === 'overview');
 ---
 
 <article class={`product-catalog-card shared-panel ${product.status === 'live' ? 'product-catalog-card--live' : ''}`}>
+  {overviewLink && <a class="product-catalog-card-overlay" href={overviewLink.href} aria-label={`View ${product.name}`}></a>}
   <div class="product-catalog-card-header">
     <img class="product-catalog-icon" src={product.image} alt={`${product.name} product icon`} />
     <div>

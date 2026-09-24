@@ -3,13 +3,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
-const features = [
-  ['☕ Curated Intelligence', 'Structured event and signal digests for research, monitoring, and briefing workflows. Outputs can omit context or contain errors; verify consequential information against available evidence.'],
-  ['🧠 Semantic Search', 'Natural-language queries with an adjustable similarity threshold. Results can be incomplete or not relevant to every query.'],
-  ['🏷️ Tag Filtering', 'AND-filter events and signals by topics, domains, regions, and entities. Combine tags with date ranges for precise, repeatable intelligence pulls.'],
-  ['🔗 Connected Records', 'Explore available links between related Events and Signals for additional context and supporting evidence.'],
-  ['🤖 MCP-Friendly', 'Return structured JSON or flat plain text with response_type=text. Lower token cost for MCP tools and LLM workflows that do not need JSON syntax.'],
-  ['📰 Publications Layer', 'Human-readable editorials and social digests on the same intelligence stack. Published analysis is not financial, legal, medical, or other professional advice.'],
+const benefits = [
+  ['Separate fact from interpretation', 'Search concrete Events and synthesized Signals as distinct records, so a briefing can show what happened alongside what it may mean.'],
+  ['Follow the supporting context', 'Move from a Signal to its supporting Events, then inspect available evidence and Source metadata before using a conclusion.'],
+  ['Ask focused questions', 'Combine natural-language search with supported filters for companies, people, products, regions, categories, and more.'],
+];
+
+const useCases = [
+  ['Research briefings', 'Start with a development, explore related interpretation, and give readers a path back to the available evidence.'],
+  ['Market monitoring', 'Build repeatable searches around the topics and entities your team follows.'],
+  ['AI agents and dashboards', 'Bring structured Events and Signals into an application through REST or MCP.'],
+];
+
+const espressoCapabilities = [
+  'Search Events and Signals as separate resources',
+  'Natural-language semantic search with an adjustable similarity threshold',
+  'Filter by Event types, categories, companies, people, products, regions, impact levels, Signal domains, Source IDs, and supported record-created date bounds',
+  'Traverse from Events to related evidence and Signals',
+  'Follow Signals to supporting Events, evidence, and available Source metadata',
+  'Discover available Sources, tags, entities, regions, and Event types',
+  'Integrate through REST API or MCP with cursor pagination',
+  'Retrieve JSON, YAML, or TOON representations',
 ];
 const espressoSchema = {
   "@type": "SoftwareApplication",
@@ -17,49 +31,197 @@ const espressoSchema = {
   name: "Espresso",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  description: "Live market intelligence suite combining API and MCP access with event digests, synthesized signals, tags, relationships, and publications.",
+  description: "Market and business intelligence API and MCP for searching Events and Signals and following links to supporting Events, evidence, and Sources.",
   url: "https://cafecito.tech/espresso/",
   provider: { "@id": "https://cafecito.tech/#organization" },
-  featureList: features.map(([title]) => title),
+  featureList: espressoCapabilities,
 };
 ---
 
 <BaseLayout
-  title="Espresso | Project Cafecito"
-  description="Curated market intelligence — API, publications, event digests, and synthesized signals for dashboards, monitoring, and AI agents."
+  title="Espresso Market Intelligence API | Project Cafecito"
+  description="Espresso API and MCP for research: search Events and Signals, filter by context, and trace Signals to supporting Events, evidence, and Sources."
   image="https://cafecito.tech/images/espresso-banner.png"
-  keywords="Espresso API, market intelligence, market intelligence, event digests, signals, MCP, Project Cafecito"
+  keywords="Espresso API, market intelligence API, business intelligence API, Events API, Signals API, semantic search, event filters, evidence traversal, Source metadata, REST, MCP, JSON, YAML, TOON, Project Cafecito"
+  productCapabilities={espressoCapabilities}
   jsonLd={espressoSchema}
 >
   <Nav />
-  <header class="hero" id="what-is-espresso">
-    <div class="container">
-      <section class="hero-frame hero-frame--espresso">
-        <article class="hero-copy">
+  <main>
+    <header class="espresso-hero" id="what-is-espresso">
+      <div class="container espresso-hero-grid">
+        <div class="espresso-hero-copy">
           <p class="eyebrow">Project Cafecito / Espresso</p>
-          <h1>Market Intelligence Suite for AI Workflows</h1>
-          <p>Espresso is part of a larger product suite that includes the Espresso API and Espresso Publications (editorials, X, Threads) — curated digests and human-readable analysis built on the same intelligence layer. It provides event digests, synthesized signals, tags, and relationships for dashboards, monitoring workflows, and AI agents. Outputs may be incomplete or incorrect and are not a sole basis for consequential decisions.</p>
-          <div class="hero-badges">
-            <span class="shared-badge">MCP</span><span class="shared-badge">JSON</span><span class="shared-badge">Semantic Search</span><span class="shared-badge">Events &amp; Signals</span><span class="shared-badge shared-badge--ghost-mint">v0.1 | Live</span>
+          <h1>Market intelligence for developers.</h1>
+          <p class="espresso-lede">Espresso is an API for research, monitoring, and AI briefings. Search concrete <strong>Events</strong> and synthesized <strong>Signals</strong>, then follow the links that connect interpretation to supporting context.</p>
+          <div class="espresso-actions">
+            <a class="btn btn-primary" href="https://developer.cafecito.tech/products/espresso">Explore the Espresso API <span aria-hidden="true">→</span></a>
+            <a class="espresso-text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
           </div>
-        </article>
-      </section>
-    </div>
-  </header>
-  <main class="container">
-    <section class="section" id="why-espresso">
-      <div class="section-title"><h2>Why Espresso</h2><p>Use Espresso for research, monitoring, and briefing workflows. Verify material information and do not use its outputs as the sole basis for a consequential decision.</p></div>
-      <div class="grid">{features.map(([title, text]) => <article class="card shared-panel"><h3>{title}</h3><p>{text}</p></article>)}</div>
-    </section>
-    <section class="section" id="get-espresso">
-      <div class="section-title"><h2>Get Started</h2><p>Choose the live interface that fits your workflow: API and MCP access for systems, or publications for human-readable analysis.</p></div>
-      <div class="products products--no-media">
-        <article class="product shared-panel shared-panel--interactive"><a class="product-link-overlay" href="https://developer.cafecito.tech/howtos/espresso-howto" aria-label="Read the Espresso API documentation"></a><div><span class="tag shared-badge shared-badge--mint">Live</span><h3>🔌 API &amp; MCP</h3><p>Full endpoint reference, authentication, filtering, and examples for integrating Espresso into a dashboard, monitoring workflow, RAG pipeline, or agent.</p></div></article>
-        <article class="product shared-panel shared-panel--interactive"><a class="product-link-overlay" href="https://espresso.cafecito.tech" aria-label="Read Espresso Publications"></a><div><span class="tag shared-badge shared-badge--mint">Live</span><h3>📰 Publications</h3><p>Curated editorials and digests on the web. Deeper human-readable analysis built on the same intelligence layer.</p></div></article>
-        <article class="product shared-panel shared-panel--interactive"><a class="product-link-overlay" href="https://x.com/espressovibz" aria-label="Open Espresso on X"></a><div><span class="tag shared-badge shared-badge--mint">Live</span><h3 class="product-heading-with-icon"><img src="https://x.com/favicon.ico" alt="" class="heading-favicon" width="22" height="22" loading="lazy" />X</h3><p>Daily shots of curated insights on tech, startups, and market trends. Follow for concentrated intelligence in your feed.</p></div></article>
-        <article class="product shared-panel shared-panel--interactive"><a class="product-link-overlay" href="https://www.threads.com/@espresso.sips" aria-label="Open Espresso on Threads"></a><div><span class="tag shared-badge shared-badge--mint">Live</span><h3 class="product-heading-with-icon"><img src="https://static.cdninstagram.com/rsrc.php/y4/r/pctUncuduBn.svg" alt="" class="heading-favicon" width="22" height="22" loading="lazy" />Threads</h3><p>Short-form digests and signal highlights on Threads. Same high-signal layer, served for casual reading.</p></div></article>
+          <p class="espresso-hero-note">Live API · REST and MCP · JSON, YAML, and TOON</p>
+        </div>
+        <figure class="espresso-visual">
+          <div class="espresso-visual-top"><span class="espresso-window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>ESPRESSO / INTELLIGENCE FLOW</span></div>
+          <div class="espresso-visual-body">
+            <div class="espresso-flow-card">
+              <span class="espresso-flow-label"><span class="espresso-flow-dot"></span> EVENT</span>
+              <strong>What happened?</strong><p>A concrete business or market development.</p>
+            </div>
+            <div class="espresso-flow-connector" aria-hidden="true"><span>context</span><b>↓</b></div>
+            <div class="espresso-flow-card espresso-flow-card--signal">
+              <span class="espresso-flow-label"><span class="espresso-flow-dot"></span> SIGNAL</span>
+              <strong>What could it mean?</strong><p>A synthesized conclusion, implication, or outlook.</p>
+            </div>
+            <div class="espresso-flow-connector" aria-hidden="true"><span>trace back</span><b>↓</b></div>
+            <div class="espresso-evidence-row"><span>Supporting Events</span><span>Evidence</span><span>Sources</span></div>
+          </div>
+          <figcaption class="espresso-visual-caption">Illustrative workflow; record details and available links vary.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="espresso-section" id="how-it-works" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="espresso-section-heading">
+          <p class="eyebrow">How Espresso works</p>
+          <h2 id="workflow-title">Go from a question to a traceable answer.</h2>
+          <p>Events and Signals stay separate, so your application can present a development, its interpretation, and the available support without blending them together.</p>
+        </div>
+        <div class="espresso-steps">
+          <article class="shared-panel espresso-step"><span class="espresso-step-number">01</span><h3>Find a development</h3><p>Search Events with natural language and supported filters for the business context that matters to you.</p></article>
+          <article class="shared-panel espresso-step"><span class="espresso-step-number">02</span><h3>Explore the signal</h3><p>Inspect related Signals for synthesized implications and outlook, where available.</p></article>
+          <article class="shared-panel espresso-step"><span class="espresso-step-number">03</span><h3>Check the support</h3><p>Follow a Signal to supporting Events, then inspect available evidence and Source metadata.</p></article>
+        </div>
       </div>
     </section>
+
+    <section class="espresso-section espresso-section--shade" aria-labelledby="capabilities-title">
+      <div class="container espresso-split">
+        <div class="espresso-section-heading">
+          <p class="eyebrow">Built for useful context</p>
+          <h2 id="capabilities-title">Structure for the question behind the headline.</h2>
+          <p>Get the records your workflow needs while keeping the supporting trail close at hand.</p>
+        </div>
+        <div class="espresso-capabilities">
+          {benefits.map(([title, description]) => <article class="espresso-capability"><h3>{title}</h3><p>{description}</p></article>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="espresso-section" aria-labelledby="use-cases-title">
+      <div class="container">
+        <div class="espresso-section-heading"><p class="eyebrow">Where it fits</p><h2 id="use-cases-title">Intelligence for the way you work.</h2></div>
+        <div class="espresso-use-cases">
+          {useCases.map(([title, description]) => <article class="shared-panel espresso-use-case"><h3>{title}</h3><p>{description}</p></article>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="espresso-section espresso-section--integration" aria-labelledby="integration-title">
+      <div class="container espresso-integration">
+        <div>
+          <p class="eyebrow">Made for builders</p><h2 id="integration-title">Use it in your stack.</h2>
+          <p>Retrieve Events and Signals through REST or MCP. Choose JSON, YAML, or TOON for the same logical payload, and use cursor pagination for longer result sets.</p>
+          <a class="espresso-inline-link" href="https://developer.cafecito.tech/products/espresso/workflows">Explore example workflows <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="espresso-format-panel" aria-label="Supported integration options">
+          <div><span>ACCESS</span><strong>REST <i>/</i> MCP</strong></div>
+          <div><span>FORMATS</span><strong>JSON <i>/</i> YAML <i>/</i> TOON</strong></div>
+          <div><span>RETRIEVAL</span><strong>Search <i>/</i> Filter <i>/</i> Traverse</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="espresso-section espresso-section--questions" aria-labelledby="questions-title">
+      <div class="container espresso-questions">
+        <div class="espresso-section-heading"><p class="eyebrow">Good to know</p><h2 id="questions-title">A few practical details.</h2></div>
+        <div class="espresso-question-list">
+          <article><h3>How do I start?</h3><p>The <a href="https://developer.cafecito.tech/products/espresso">developer portal</a> has the current API guide, authentication details, and reference. Check it for access information.</p></article>
+          <article><h3>Is every Signal backed by the same amount of evidence?</h3><p>No. Available links and record fields vary. Follow the supporting Events and Sources, and verify material information before acting on it.</p></article>
+          <article><h3>Can I read Espresso without building an integration?</h3><p>Yes. <a href="https://espresso.cafecito.tech/">Espresso Publications</a> offers human-readable analysis. The API and MCP are the integration surfaces.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="espresso-section espresso-section--closing" aria-labelledby="closing-title">
+      <div class="container"><div class="espresso-closing shared-panel">
+        <div><p class="eyebrow">Start with Espresso</p><h2 id="closing-title">Build a clearer path from development to insight.</h2><p>Explore the API, its workflows, and the current documentation.</p></div>
+        <a class="btn btn-primary" href="https://developer.cafecito.tech/products/espresso">Explore the Espresso API <span aria-hidden="true">→</span></a>
+      </div></div>
+    </section>
+    <p class="container espresso-caveat">Espresso includes generated interpretation that may omit context or contain errors. It is not financial or other professional advice; verify consequential information against available sources.</p>
   </main>
   <Footer />
 </BaseLayout>
+
+<style>
+  .espresso-hero { overflow: hidden; padding: clamp(3rem, 7vw, 6rem) 0; background: radial-gradient(circle at 78% 28%, rgba(104, 218, 211, .13), transparent 25rem), radial-gradient(circle at 9% 92%, rgba(193, 129, 59, .18), transparent 30rem), linear-gradient(140deg, #120b07, #2e160b 70%, #1a130f); border-bottom: 1px solid var(--line); }
+  .espresso-hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
+  .espresso-hero h1 { max-width: 13ch; margin: .8rem 0 1.2rem; font-size: clamp(2.5rem, 5.1vw, 4.5rem); letter-spacing: -.035em; line-height: 1.07; }
+  .espresso-lede { max-width: 60ch; margin: 0; color: rgba(245, 239, 229, .86); font-size: clamp(1rem, 1.4vw, 1.12rem); line-height: 1.7; }
+  .espresso-lede strong { color: #fff7e9; }
+  .espresso-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.3rem; margin-top: 1.8rem; }
+  .espresso-actions .btn, .espresso-closing .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: .6rem; text-align: center; }
+  .espresso-text-link, .espresso-inline-link { color: var(--latte); font-weight: 700; text-decoration: underline; text-underline-offset: .25em; }
+  .espresso-hero-note { margin: 1.25rem 0 0; color: rgba(245, 239, 229, .65); font-size: .85rem; }
+  .espresso-visual { min-width: 0; margin: 0; overflow: hidden; border: 1px solid rgba(234, 216, 191, .29); border-radius: 20px; background: #17130f; box-shadow: 0 30px 70px rgba(0, 0, 0, .38); }
+  .espresso-visual-top { display: flex; align-items: center; gap: .8rem; padding: .85rem 1rem; border-bottom: 1px solid rgba(234, 216, 191, .15); color: rgba(245, 239, 229, .63); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .66rem; letter-spacing: .08em; }
+  .espresso-window-dots { display: flex; gap: .3rem; }
+  .espresso-window-dots i { width: .42rem; height: .42rem; border-radius: 50%; background: #826f5b; }
+  .espresso-window-dots i:first-child { background: var(--caramel); }
+  .espresso-visual-body { padding: clamp(1rem, 3vw, 1.7rem); }
+  .espresso-flow-card { padding: 1.1rem 1.25rem; border: 1px solid rgba(234, 216, 191, .24); border-radius: 14px; background: linear-gradient(130deg, #2d2118, #201914); }
+  .espresso-flow-card--signal { border-color: rgba(104, 218, 211, .4); background: linear-gradient(130deg, #1a3330, #19211f); }
+  .espresso-flow-label { display: flex; align-items: center; gap: .45rem; margin-bottom: .65rem; color: #edba79; font-size: .7rem; font-weight: 700; letter-spacing: .14em; }
+  .espresso-flow-card--signal .espresso-flow-label { color: #8be3dd; }
+  .espresso-flow-dot { width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+  .espresso-flow-card strong { display: block; font-size: 1.12rem; }
+  .espresso-flow-card p { margin: .3rem 0 0; color: rgba(245, 239, 229, .73); font-size: .85rem; line-height: 1.5; }
+  .espresso-flow-connector { display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 3rem; color: rgba(245, 239, 229, .57); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .7rem; }
+  .espresso-flow-connector b { color: var(--mint); font-size: 1.05rem; line-height: 1; }
+  .espresso-evidence-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
+  .espresso-evidence-row span { padding: .65rem .25rem; border: 1px solid rgba(104, 218, 211, .38); border-radius: 8px; color: #d0f3ef; background: rgba(104, 218, 211, .08); font-size: .7rem; font-weight: 700; text-align: center; }
+  .espresso-visual-caption { margin: 0; padding: 0 1rem 1rem; color: rgba(245, 239, 229, .56); font-size: .7rem; text-align: center; }
+  .espresso-section { padding: clamp(3.5rem, 6vw, 5.5rem) 0; }
+  .espresso-section--shade { background: linear-gradient(130deg, rgba(46, 22, 11, .7), rgba(22, 18, 15, .95)); border-block: 1px solid var(--line); }
+  .espresso-section-heading { max-width: 43rem; }
+  .espresso-section-heading .eyebrow, .espresso-integration .eyebrow, .espresso-closing .eyebrow { margin: 0 0 .6rem; color: #e9ad69; font-weight: 700; }
+  .espresso-section-heading h2, .espresso-integration h2, .espresso-closing h2 { font-size: clamp(2rem, 3.4vw, 3.15rem); letter-spacing: -.025em; }
+  .espresso-section-heading > p:last-child, .espresso-integration p:not(.eyebrow), .espresso-closing p:not(.eyebrow) { color: rgba(245, 239, 229, .77); line-height: 1.65; }
+  .espresso-steps, .espresso-use-cases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .espresso-step, .espresso-use-case { padding: 1.5rem; }
+  .espresso-step-number { color: var(--mint); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .85rem; }
+  .espresso-step h3, .espresso-use-case h3 { margin: 1.1rem 0 .65rem; color: var(--latte); font-size: 1.2rem; }
+  .espresso-step p, .espresso-use-case p, .espresso-capability p, .espresso-question-list p { margin: 0; color: rgba(245, 239, 229, .76); line-height: 1.6; }
+  .espresso-split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .espresso-capability { padding: 0 0 1.4rem 1.2rem; border-left: 2px solid rgba(104, 218, 211, .55); }
+  .espresso-capability + .espresso-capability { margin-top: 1.5rem; }
+  .espresso-capability h3 { margin: 0 0 .5rem; font-size: 1.12rem; }
+  .espresso-use-case { min-height: 12rem; background: linear-gradient(145deg, rgba(46, 22, 11, .95), rgba(30, 16, 10, .66)); }
+  .espresso-use-case h3 { margin-top: 0; }
+  .espresso-section--integration { border-block: 1px solid var(--line); background: #1d1712; }
+  .espresso-integration { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+  .espresso-integration p:not(.eyebrow) { max-width: 53ch; }
+  .espresso-inline-link { display: inline-block; margin-top: .5rem; }
+  .espresso-format-panel { padding: .5rem 1.5rem; border: 1px solid rgba(234, 216, 191, .23); border-radius: 18px; background: #120f0c; }
+  .espresso-format-panel div { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; }
+  .espresso-format-panel div + div { border-top: 1px solid rgba(234, 216, 191, .15); }
+  .espresso-format-panel span { color: var(--mint); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .68rem; letter-spacing: .1em; }
+  .espresso-format-panel strong { text-align: right; font-size: .9rem; }
+  .espresso-format-panel i { color: #947a61; font-style: normal; }
+  .espresso-questions { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); }
+  .espresso-question-list article { padding: 0 0 1.35rem; border-bottom: 1px solid var(--line); }
+  .espresso-question-list article + article { padding-top: 1.35rem; }
+  .espresso-question-list h3 { margin: 0 0 .55rem; font-size: 1.05rem; }
+  .espresso-question-list a { color: #f0b977; text-decoration: underline; text-underline-offset: .2em; }
+  .espresso-section--closing { padding-bottom: 1.5rem; }
+  .espresso-closing { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); background: radial-gradient(circle at 90% 20%, rgba(104, 218, 211, .13), transparent 22rem), linear-gradient(130deg, #2e160b, #1e130d); }
+  .espresso-closing h2 { max-width: 18ch; }
+  .espresso-closing p:not(.eyebrow) { margin-bottom: 0; }
+  .espresso-closing .btn { flex: none; }
+  .espresso-caveat { margin: 0 auto 2rem; color: rgba(245, 239, 229, .59); font-size: .83rem; line-height: 1.6; }
+  a:focus-visible { outline: 3px solid var(--mint); outline-offset: 4px; }
+  @media (max-width: 850px) { .espresso-hero-grid, .espresso-split, .espresso-integration, .espresso-questions { grid-template-columns: 1fr; } .espresso-hero h1 { max-width: 16ch; } .espresso-visual { width: min(100%, 36rem); } }
+  @media (max-width: 700px) { .espresso-steps, .espresso-use-cases { grid-template-columns: 1fr; } .espresso-step, .espresso-use-case { min-height: 0; } .espresso-closing { align-items: flex-start; flex-direction: column; } }
+  @media (max-width: 480px) { .espresso-hero { padding: 3rem 0; } .espresso-hero h1 { font-size: clamp(2.25rem, 10vw, 3rem); } .espresso-actions .btn, .espresso-closing .btn { width: 100%; } .espresso-visual-top { font-size: .56rem; } .espresso-flow-card { padding: .95rem; } .espresso-format-panel { padding: .25rem 1rem; } .espresso-format-panel div { flex-direction: column; gap: .35rem; } .espresso-format-panel strong { text-align: left; } }
+</style>

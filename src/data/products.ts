@@ -37,7 +37,7 @@ export const products = [
     description:
       'A public-information discovery and search service with a browser-based News App, semantic search, practical filtering, clean JSON, and MCP support. Coverage and availability vary by source and record.',
     audience: 'Developers, AI agents, and teams building RAG or media-monitoring workflows.',
-    capabilities: ['News and blog aggregation', 'Browser News App', 'Semantic search', 'Rich filtering', 'JSON API and MCP'],
+    capabilities: ['Natural-language article and document search', '14 documented filterable content types', 'Structured source, topic, entity, region, and date filters', 'Article, Story, Source, and mention context', 'Cursor-paginated JSON REST and MCP'],
     image: '/images/beans.png',
     links: [
       { label: 'Beans product overview', href: '/beans/', type: 'overview' },
@@ -64,7 +64,7 @@ export const products = [
     description:
       'A curated intelligence suite combining the Espresso API and MCP with publications, event digests, synthesized signals, tags, and relationships.',
     audience: 'Developers, analysts, dashboards, and AI agents that need market-intelligence research and monitoring tools.',
-    capabilities: ['Event and signal digests', 'Semantic search', 'Tags and relationships', 'API, MCP, and publications'],
+    capabilities: ['Separate Event and Signal search', 'Semantic and structured filters', 'Traversal to supporting Events, evidence, and Sources', 'REST and MCP with cursor pagination', 'JSON, YAML, and TOON representations'],
     image: '/images/espresso.png',
     links: [
       { label: 'Espresso product overview', href: '/espresso/', type: 'overview' },
@@ -99,14 +99,14 @@ export const products = [
     slug: 'medicafe',
     name: 'MediCafe',
     status: 'in-development',
-    statusLabel: 'In development',
+    statusLabel: 'In Limited Pilot',
     category: 'Healthcare Revenue Cycle Management',
     description:
-      'A medical operations concept in development. It is unavailable and is not accepting production medical or patient data.',
+      'A medical-billing workspace in pilot deployment, designed for clear and accountable operations.',
     audience: 'Medical practices and operations teams managing repetitive billing workflows.',
-    capabilities: ['Concept development', 'Workflow research', 'Not accepting production data'],
+    capabilities: ['Source intake and identity review with synthetic data', 'Recorded service corrections and operator approval', 'Versioned claim assembly with an immutable approved payload', 'Simulated delivery tracking and uncertain-outcome reconciliation'],
     image: '/images/medicafe.png',
-    links: [],
+    links: [{ label: 'MediCafe product overview', href: '/medicafe/', type: 'overview' }],
   },
 ] as const satisfies readonly Product[];
 

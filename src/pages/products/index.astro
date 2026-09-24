@@ -4,12 +4,18 @@ import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { inDevelopmentProducts, liveProducts } from '../../data/products';
+
+const productCapabilities = [
+  ...liveProducts.flatMap((product) => product.capabilities.map((capability) => `${product.name}: ${capability}`)),
+  ...inDevelopmentProducts.flatMap((product) => product.capabilities.map((capability) => `${product.name} (${product.statusLabel}): ${capability}`)),
+];
 ---
 
 <BaseLayout
   title="Products | Project Cafecito"
   description="Explore Project Cafecito's live AI products and products in development: Beans, Espresso, Cortado, and MediCafe."
   keywords="Project Cafecito products, Beans API, Espresso API, market intelligence, social automation, medical billing automation"
+  productCapabilities={productCapabilities}
 >
   <Nav />
   <main>
@@ -120,6 +126,7 @@ import { inDevelopmentProducts, liveProducts } from '../../data/products';
   }
 
   .product-catalog-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -189,6 +196,8 @@ import { inDevelopmentProducts, liveProducts } from '../../data/products';
   }
 
   .product-catalog-links {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 0.55rem 0.9rem;

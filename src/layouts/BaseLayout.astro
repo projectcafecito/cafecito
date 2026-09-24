@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   image?: string;
   keywords?: string;
+  productCapabilities?: string[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -16,6 +17,7 @@ const {
   description = 'Project Cafecito builds practical AI tools for small business.',
   image = 'https://cafecito.tech/images/cafecito-banner.png',
   keywords,
+  productCapabilities = [],
   jsonLd,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
@@ -61,6 +63,7 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
+    {productCapabilities.map((capability) => <meta name="product:capability" content={capability} />)}
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -72,6 +75,7 @@ const structuredData = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
     <link rel="canonical" href={canonical} />
+    <link rel="describedby" type="text/plain" href="/llms.txt" />
     <link rel="icon" href="/images/favicon.ico" />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <title>{title}</title>

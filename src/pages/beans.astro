@@ -3,68 +3,262 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
-const features = [
-  ['📡 Coverage', 'Beans searches a changing catalog of public-information sources/outlets. Coverage, availability, and update timing vary and do not imply source endorsement or unrestricted content rights.'],
-  ['🧠 Semantic Search', 'Natural-language semantic search with an adjustable relevance threshold. Results can be incomplete or not relevant to every query; verify material information against canonical sources.'],
-  ['🔍 Filtering', 'Filter by categories, named entities, geographic regions, content types, sources, and time ranges. Available fields vary by record.'],
-  ['📈 Trend Context', 'Selected records may include available attention observations and related-coverage context. These observations do not establish accuracy, popularity, or completeness.'],
-  ['🏷️ Automated Enrichment', 'Selected records may include automated entities, sentiment, topics, and regions. These classifications can be unavailable or incorrect and should be verified for consequential use.'],
-  ['🔗 Related Coverage', 'Related articles may be linked across public-information sources/outlets when available. Relationships are context, not a guarantee of a complete narrative.'],
+const contentGroups = [
+  { label: 'Reporting & discussion', types: ['news', 'blog', 'podcast', 'site'] },
+  { label: 'Company & official', types: ['press_release', 'official_statement', 'earnings_report', 'financial_report'] },
+  { label: 'Legal & regulatory', types: ['lawsuit', 'enforcement_action', 'contract'] },
+  { label: 'Research & technical', types: ['research_paper', 'whitepaper', 'technical_documentation'] },
+];
+
+const workflows = [
+  { number: '01', title: 'Ask a question', description: 'Find relevant articles and documents with natural-language search, or look up a known URL or article ID.' },
+  { number: '02', title: 'Narrow the material', description: 'Select content types and combine supported source, topic, entity, region, language, and date filters.' },
+  { number: '03', title: 'Inspect the context', description: 'Read available article details, follow similar articles and Stories, and examine available source or mention context.' },
+  { number: '04', title: 'Build with it', description: 'Bring cursor-paginated JSON responses or MCP tools into an app, research workflow, or agent.' },
+];
+const beansMetaDescription = 'Beans API searches available news, reports, legal records, official statements, research, and technical documents with semantic filters, JSON, and MCP.';
+const beansCapabilities = [
+  'Natural-language article and document search with adjustable similarity threshold and article UUID or URL lookup',
+  '14 documented request-filterable content types across news, blogs, podcasts, company reports, official statements, legal records, research, and technical material',
+  'Route-supported source and domain include or exclude filters plus author, category, region, entity, sentiment, language, tag, and publication-date filters',
+  'Latest articles, news-scoped feeds, recent top headlines, and attention-ranked trending records',
+  'Article details and body content when available, similar articles, Story membership, Source metadata, and external mentions',
+  'Cursor-paginated JSON REST responses and MCP tools for apps, RAG pipelines, and AI agents',
 ];
 const beansSchema = {
   "@type": "SoftwareApplication",
   "@id": "https://cafecito.tech/beans/#software",
   name: "Beans",
-  applicationCategory: "BusinessApplication",
+  applicationCategory: "DeveloperApplication",
   operatingSystem: "Web",
-  description: "Live news and blogs platform with a browser-based News App, aggregation API, semantic search, structured filtering, JSON, and MCP support.",
+  description: beansMetaDescription,
   url: "https://cafecito.tech/beans/",
-  sameAs: ["https://beans.cafecito.tech/"],
+  sameAs: ["https://beans.cafecito.tech/", "https://developer.cafecito.tech/products/beans"],
   provider: { "@id": "https://cafecito.tech/#organization" },
-  featureList: features.map(([title]) => title),
+  featureList: beansCapabilities,
 };
 ---
 
 <BaseLayout
-  title="Beans News App, API & MCP | Project Cafecito"
-  description="Beans is a live news and blogs platform with a News App, semantic search, rich filtering, clean JSON endpoints, and MCP support."
+  title="Beans | Public-Information Discovery API & MCP | Project Cafecito"
+  description={beansMetaDescription}
   image="https://cafecito.tech/images/beans-banner.png"
-  keywords="Beans News App, Beans API, news API, blog API, vector search, MCP, Project Cafecito"
+  keywords="Beans API, public-information discovery API, semantic document search, news API, business reports, legal records, research papers, JSON REST API, MCP"
+  productCapabilities={beansCapabilities}
   jsonLd={beansSchema}
 >
   <Nav />
-  <header class="hero" id="what-is-beans">
-    <div class="container">
-      <section class="hero-frame hero-frame--beans">
-        <article class="hero-copy">
-          <p class="eyebrow">Project Cafecito / Beans</p>
-          <h1>News &amp; Blogs API for AI Workflows</h1>
-          <p>Beans is a public-information discovery and search API for developers, AI agents, research tools, and dashboards. Use semantic search, structured filters, and JSON or MCP responses to explore available source material. Coverage, update timing, and outputs vary by source and record.</p>
-          <div class="hero-badges">
-            <span class="shared-badge">MCP</span><span class="shared-badge">JSON</span><span class="shared-badge">Semantic Search</span><span class="shared-badge">Variable source coverage</span><span class="shared-badge shared-badge--ghost-mint">Live</span>
+  <main class="beans-page">
+    <header class="beans-hero" id="what-is-beans">
+      <div class="container beans-hero-grid">
+        <div class="beans-hero-copy">
+          <p class="eyebrow">Project Cafecito / Beans <span class="beans-status">Live API + MCP</span></p>
+          <h1>Search public information beyond the headline.</h1>
+          <p class="beans-lede">Beans gives developers one discovery API for available news and source material. Search reporting alongside company documents, official statements, legal records, research, and technical content, then bring the results into apps and AI agents.</p>
+          <div class="beans-actions">
+            <a class="btn btn-primary beans-primary" href="https://developer.cafecito.tech/products/beans">Explore the Beans API <span aria-hidden="true">→</span></a>
+            <a class="beans-text-link" href="#how-beans-works">See how it works <span aria-hidden="true">↓</span></a>
           </div>
-        </article>
-      </section>
-    </div>
-  </header>
-  <main class="container">
-    <section class="section" id="why-beans">
-      <div class="section-title"><h2>Why Beans</h2><p>Use the API when your product needs current source material and controlled retrieval.</p></div>
-      <div class="grid">{features.map(([title, text]) => <article class="card shared-panel"><h3>{title}</h3><p>{text}</p></article>)}</div>
-    </section>
-    <section class="section" id="get-beans">
-      <div class="section-title"><h2>Get Started</h2><p>The supported Beans offering is live API and MCP access.</p></div>
-      <div class="products products--no-media">
-        <article class="product shared-panel shared-panel--interactive">
-          <a class="product-link-overlay" href="https://developer.cafecito.tech/howtos/beans-howto" aria-label="Read the Beans API documentation"></a>
-          <div><span class="tag shared-badge shared-badge--mint">Live</span><h3>🔌 API &amp; MCP</h3><p>Full endpoint reference, authentication, filtering, and examples for integrating Beans into an app, RAG pipeline, or agent. <a href="https://developer.cafecito.tech/howtos/beans-howto">Read the Beans API documentation</a>.</p></div>
-        </article>
-        <article class="product shared-panel shared-panel--interactive">
-          <a class="product-link-overlay" href="https://beans.cafecito.tech/" aria-label="Open the Beans News App"></a>
-          <div><span class="tag shared-badge shared-badge--mint">Live</span><h3>📰 News App</h3><p>The live Beans News App lets you search, filter, and explore news and blog trends in the browser. <a href="https://beans.cafecito.tech/">Open the Beans News App</a>.</p></div>
-        </article>
+          <p class="beans-hero-note">JSON REST and MCP · Search and filter · Coverage varies by source and content type</p>
+        </div>
+        <div class="beans-hero-visual" role="img" aria-label="Illustration of the kinds of public information searchable with Beans">
+          <div class="beans-visual-top"><span class="beans-visual-dot"></span> One search surface <span class="beans-visual-mcp">API / MCP</span></div>
+          <div class="beans-visual-query"><span>Find material about</span><strong>a developing topic</strong><span aria-hidden="true">↗</span></div>
+          <div class="beans-visual-divider">Search across available material</div>
+          <div class="beans-visual-results">
+            <div><span class="beans-type-dot beans-type-dot--mint"></span><span>News &amp; blogs</span><span aria-hidden="true">↗</span></div>
+            <div><span class="beans-type-dot beans-type-dot--gold"></span><span>Reports &amp; statements</span><span aria-hidden="true">↗</span></div>
+            <div><span class="beans-type-dot beans-type-dot--rose"></span><span>Legal records</span><span aria-hidden="true">↗</span></div>
+            <div><span class="beans-type-dot beans-type-dot--blue"></span><span>Research &amp; technical docs</span><span aria-hidden="true">↗</span></div>
+          </div>
+          <p class="beans-visual-caption">Illustrative categories. Available records depend on the query and sources.</p>
+        </div>
       </div>
+    </header>
+
+    <section class="beans-section beans-intro" aria-labelledby="beans-intro-heading">
+      <div class="container beans-intro-grid">
+        <div><p class="eyebrow">Why Beans</p><h2 id="beans-intro-heading">The story is often in the source material.</h2></div>
+        <p>A headline can point you toward a topic. Beans helps your product search available reporting and underlying public documents through the same documented interface, so users can keep exploring the material behind a question.</p>
+      </div>
+    </section>
+
+    <section class="beans-section beans-coverage" id="coverage" aria-labelledby="beans-coverage-heading">
+      <div class="container">
+        <div class="beans-section-heading"><div><p class="eyebrow">Content breadth</p><h2 id="beans-coverage-heading">More than just news.</h2></div></div>
+        <div class="beans-content-grid">
+          {contentGroups.map((group) => <article class="shared-panel beans-content-card"><h3>{group.label}</h3><ul>{group.types.map((type) => <li><code>{type}</code></li>)}</ul></article>)}
+        </div>
+        <p class="beans-caveat">These are supported request filters, not a promise of comprehensive coverage. Availability varies by type, source, and query.</p>
+      </div>
+    </section>
+
+    <section class="beans-section" id="how-beans-works" aria-labelledby="beans-workflow-heading">
+      <div class="container">
+        <div class="beans-section-heading"><div><p class="eyebrow">From question to context</p><h2 id="beans-workflow-heading">Find it. Narrow it. Follow it.</h2></div><p>Use the same API surface for a quick lookup or a repeatable research workflow.</p></div>
+        <div class="beans-workflow-grid">
+          {workflows.map((step) => <article class="beans-workflow-step"><span class="beans-step-number">{step.number}</span><h3>{step.title}</h3><p>{step.description}</p></article>)}
+        </div>
+        <a class="beans-inline-link" href="https://developer.cafecito.tech/products/beans">Explore endpoints and examples <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="beans-section beans-app-section" id="news-app" aria-labelledby="beans-app-heading">
+      <div class="container beans-app-grid">
+        <div class="beans-app-copy">
+          <p class="eyebrow">See Beans in the browser</p><h2 id="beans-app-heading">Try the News App.</h2>
+          <p>The live Beans News App is a browser example built on the platform. Search published news, explore topics, and open available story context. The public API supports a broader set of document types than this news-focused app displays.</p>
+          <a class="btn btn-secondary" href="https://beans.cafecito.tech/">Open the News App <span aria-hidden="true">↗</span></a>
+          <p class="beans-image-note">Mobile view of the Tech &amp; Innovation feed in the live Beans News App.</p>
+        </div>
+        <div class="beans-phone-wrap"><div class="beans-phone"><img src="/images/beans-mobile-tech.png" width="390" height="844" loading="lazy" alt="Mobile view of the Beans News App Tech and Innovation feed showing a trending technology story" /></div></div>
+      </div>
+    </section>
+
+    <section class="beans-section beans-fit" aria-labelledby="beans-fit-heading">
+      <div class="container">
+        <div class="beans-section-heading"><div><p class="eyebrow">Built for your workflow</p><h2 id="beans-fit-heading">Put discovery where your users work.</h2></div></div>
+        <div class="beans-fit-grid">
+          <article class="shared-panel"><h3>Research tools</h3><p>Let users search reporting and available source documents, then inspect related articles and Story coverage.</p></article>
+          <article class="shared-panel"><h3>Monitoring &amp; dashboards</h3><p>Combine supported content, source, entity, region, and date filters to build repeatable views of a topic.</p></article>
+          <article class="shared-panel"><h3>Agents &amp; RAG</h3><p>Retrieve structured records through JSON or MCP, with links back to available article and source context.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="beans-section beans-questions" aria-labelledby="beans-questions-heading">
+      <div class="container beans-questions-grid">
+        <div><p class="eyebrow">Good to know</p><h2 id="beans-questions-heading">What to expect from Beans</h2></div>
+        <div class="beans-questions-list">
+          <details><summary>Is the News App the whole product?</summary><p>No. The News App is a news-focused browser experience. Beans' API and MCP are the developer product, with documented filters for 14 content types.</p></details>
+          <details><summary>Does every result include complete article text?</summary><p>No. Body content and related context are available only for some records. Check the underlying source and its reuse terms before relying on or republishing material.</p></details>
+          <details><summary>Where do I start integrating?</summary><p>The <a href="https://developer.cafecito.tech/products/beans">Beans developer portal</a> covers the public API and MCP. Use its current reference for authentication, supported filters, and examples.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="beans-section beans-final-section" aria-labelledby="beans-final-heading">
+      <div class="container"><div class="beans-final-panel">
+        <div><p class="eyebrow">Build with Beans</p><h2 id="beans-final-heading">Start with a question. Find more of the material.</h2><p>Explore the documented API and connect public-information discovery to your product.</p></div>
+        <a class="btn btn-primary beans-primary" href="https://developer.cafecito.tech/products/beans">Explore the Beans API <span aria-hidden="true">→</span></a>
+      </div></div>
     </section>
   </main>
   <Footer />
 </BaseLayout>
+
+<style>
+  .beans-page { overflow: clip; }
+  .beans-page :is(h1, h2, h3) { letter-spacing: -0.025em; }
+  .beans-page p { line-height: 1.65; }
+  .beans-page a:focus-visible, .beans-page summary:focus-visible { outline: 3px solid var(--mint); outline-offset: 4px; }
+
+  .beans-hero { padding: clamp(3rem, 4.5vw, 4.5rem) 0 4rem; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 76% 32%, rgba(104, 218, 211, .14), transparent 28rem), radial-gradient(circle at 15% 82%, rgba(193, 129, 59, .16), transparent 26rem), linear-gradient(135deg, #120b07, #24150e 65%, #171311); }
+  .beans-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
+  .beans-hero .eyebrow { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; margin: 0 0 1.4rem; color: var(--latte); }
+  .beans-status { display: inline-flex; padding: .3rem .65rem; border: 1px solid rgba(104, 218, 211, .45); border-radius: 999px; color: var(--mint); letter-spacing: .06em; }
+  .beans-hero h1 { max-width: 14ch; font-size: clamp(2.7rem, 5vw, 4.4rem); line-height: 1.04; }
+  .beans-lede { max-width: 61ch; margin: 1.5rem 0 0; color: rgba(245, 239, 229, .86); font-size: clamp(1.05rem, 1.7vw, 1.18rem); }
+  .beans-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; margin-top: 2rem; }
+  .beans-primary { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; min-height: 48px; }
+  .beans-text-link, .beans-inline-link { display: inline-flex; align-items: center; gap: .5rem; color: var(--latte); font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
+  .beans-text-link:hover, .beans-inline-link:hover { color: var(--foam); }
+  .beans-hero-note { margin: 1.4rem 0 0; color: rgba(245, 239, 229, .63); font-size: .86rem; }
+
+  .beans-hero-visual { padding: 1.15rem; border: 1px solid rgba(234, 216, 191, .23); border-radius: 24px; background: linear-gradient(155deg, rgba(38, 28, 22, .96), rgba(16, 22, 21, .96)); box-shadow: 0 25px 70px rgba(0, 0, 0, .38); }
+  .beans-visual-top { display: flex; align-items: center; gap: .55rem; color: var(--latte); font-size: .84rem; font-weight: 700; }
+  .beans-visual-dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(104, 218, 211, .12); }
+  .beans-visual-mcp { margin-left: auto; color: rgba(245, 239, 229, .55); font-size: .72rem; letter-spacing: .1em; }
+  .beans-visual-query { display: flex; align-items: center; gap: .55rem; flex-wrap: wrap; min-height: 4.2rem; margin-top: 1.1rem; padding: 1rem; border: 1px solid rgba(104, 218, 211, .38); border-radius: 13px; background: rgba(104, 218, 211, .08); }
+  .beans-visual-query strong { font-size: .97rem; }
+  .beans-visual-query > span:last-child { margin-left: auto; color: var(--mint); }
+  .beans-visual-query > span:first-child { color: rgba(245, 239, 229, .65); font-size: .88rem; }
+  .beans-visual-divider { margin: 1.1rem 0 .8rem; color: rgba(245, 239, 229, .55); font-size: .72rem; text-align: center; text-transform: uppercase; letter-spacing: .12em; }
+  .beans-visual-results { display: grid; gap: .5rem; }
+  .beans-visual-results > div { display: flex; align-items: center; gap: .75rem; padding: .75rem .85rem; border: 1px solid rgba(245, 239, 229, .12); border-radius: 10px; background: rgba(245, 239, 229, .045); color: var(--foam); font-size: .89rem; }
+  .beans-visual-results > div > span:last-child { margin-left: auto; color: rgba(245, 239, 229, .4); }
+  .beans-type-dot { width: .5rem; height: .5rem; border-radius: 50%; }
+  .beans-type-dot--mint { background: #68dad3; }
+  .beans-type-dot--gold { background: #e6a14d; }
+  .beans-type-dot--rose { background: #db9b8b; }
+  .beans-type-dot--blue { background: #9eb8e9; }
+  .beans-visual-caption { margin: .9rem .15rem .1rem; color: rgba(245, 239, 229, .6); font-size: .72rem; line-height: 1.5 !important; }
+
+  .beans-section { padding: clamp(4rem, 7vw, 6rem) 0; }
+  .beans-section[id] { scroll-margin-top: 5rem; }
+  .beans-section .eyebrow { margin: 0 0 .7rem; color: var(--caramel); font-weight: 700; }
+  .beans-section h2 { max-width: 18ch; font-size: clamp(2rem, 4.1vw, 3.4rem); }
+  .beans-intro { border-bottom: 1px solid var(--line); }
+  .beans-intro-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: clamp(2rem, 6vw, 6rem); }
+  .beans-intro-grid > p { max-width: 56ch; margin: 0; color: rgba(245, 239, 229, .78); font-size: 1.1rem; }
+  .beans-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+  .beans-section-heading > p { max-width: 39ch; margin: 0; color: rgba(245, 239, 229, .68); }
+
+  .beans-coverage { background: #191513; }
+  .beans-content-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9rem; }
+  .beans-content-card { min-height: 245px; padding: 1.35rem; background: rgba(30, 16, 10, .5); }
+  .beans-content-card h3 { min-height: 3rem; color: var(--latte); font-size: 1.1rem; }
+  .beans-content-card ul { display: flex; flex-direction: column; gap: .65rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .beans-content-card li { overflow-wrap: anywhere; }
+  .beans-content-card code { color: rgba(245, 239, 229, .83); font-size: .83rem; }
+  .beans-caveat { margin: 1.2rem 0 0; color: rgba(245, 239, 229, .65); font-size: .85rem; }
+
+  .beans-workflow-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.1rem; margin-bottom: 1.7rem; }
+  .beans-workflow-step { padding: 1.15rem 1rem 1rem 0; border-top: 1px solid rgba(104, 218, 211, .42); }
+  .beans-step-number { color: var(--mint); font-size: .8rem; font-weight: 700; letter-spacing: .08em; }
+  .beans-workflow-step h3 { margin: 1rem 0 .55rem; font-size: 1.2rem; }
+  .beans-workflow-step p { margin: 0; color: rgba(245, 239, 229, .72); font-size: .94rem; }
+
+  .beans-app-section { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: radial-gradient(circle at 75% 45%, rgba(193, 129, 59, .13), transparent 28rem), #181310; }
+  .beans-app-grid { display: grid; grid-template-columns: 1fr minmax(270px, .85fr); align-items: center; gap: clamp(2rem, 8vw, 7rem); }
+  .beans-app-copy > p:not(.eyebrow) { max-width: 55ch; color: rgba(245, 239, 229, .77); }
+  .beans-app-copy .btn { margin-top: 1rem; min-height: 48px; }
+  .beans-image-note { margin-top: 1.2rem; font-size: .82rem; }
+  .beans-phone-wrap { display: flex; justify-content: center; }
+  .beans-phone { width: min(100%, 320px); padding: .55rem; border: 2px solid rgba(234, 216, 191, .31); border-radius: 28px; background: #0d0c0b; box-shadow: 0 28px 60px rgba(0, 0, 0, .48); }
+  .beans-phone img { display: block; width: 100%; height: auto; border-radius: 20px; }
+
+  .beans-fit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+  .beans-fit-grid article { padding: 1.5rem; }
+  .beans-fit-grid h3 { color: var(--latte); font-size: 1.15rem; }
+  .beans-fit-grid p { margin-bottom: 0; color: rgba(245, 239, 229, .74); }
+  .beans-questions { border-top: 1px solid var(--line); }
+  .beans-questions-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 6rem); }
+  .beans-questions-list { border-top: 1px solid var(--line); }
+  .beans-questions-list details { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+  .beans-questions-list summary { cursor: pointer; font-weight: 700; font-size: 1.05rem; }
+  .beans-questions-list details p { margin: .85rem 0 0; color: rgba(245, 239, 229, .73); }
+  .beans-questions-list a { color: var(--latte); text-decoration: underline; text-underline-offset: 3px; }
+
+  .beans-final-section { padding-top: 0; }
+  .beans-final-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid rgba(104, 218, 211, .3); border-radius: 24px; background: linear-gradient(115deg, rgba(45, 25, 14, .98), rgba(17, 39, 36, .88)); }
+  .beans-final-panel h2 { max-width: 17ch; font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+  .beans-final-panel p:not(.eyebrow) { margin-bottom: 0; color: rgba(245, 239, 229, .73); }
+  .beans-final-panel .btn { flex: none; }
+
+  @media (max-width: 900px) {
+    .beans-hero-grid, .beans-intro-grid, .beans-app-grid, .beans-questions-grid { grid-template-columns: 1fr; }
+    .beans-hero-visual { max-width: 620px; }
+    .beans-content-grid, .beans-workflow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .beans-app-grid { gap: 3rem; }
+    .beans-phone-wrap { justify-content: flex-start; }
+  }
+  @media (max-width: 700px) {
+    .beans-section-heading, .beans-final-panel { flex-direction: column; align-items: flex-start; }
+    .beans-fit-grid { grid-template-columns: 1fr; }
+    .beans-final-panel .btn { flex: auto; }
+  }
+  @media (max-width: 560px) {
+    .beans-hero { padding: 3.3rem 0 3.5rem; }
+    .beans-hero-grid { gap: 2.5rem; }
+    .beans-hero h1 { font-size: clamp(2.5rem, 11vw, 3.5rem); }
+    .beans-hero-visual { padding: .8rem; }
+    .beans-actions { align-items: flex-start; flex-direction: column; }
+    .beans-content-grid, .beans-workflow-grid { grid-template-columns: 1fr; }
+    .beans-content-card { min-height: 0; }
+    .beans-content-card h3 { min-height: 0; }
+    .beans-phone-wrap { justify-content: center; }
+    .beans-section { padding: 3.7rem 0; }
+    .beans-final-section { padding-top: 0; }
+  }
+</style>

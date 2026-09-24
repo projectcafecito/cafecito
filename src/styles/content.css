@@ -3,9 +3,10 @@
 .mobile-menu summary::-webkit-details-marker { display: none; }
 .mobile-menu-links { position: absolute; right: 0; top: 3rem; width: 13rem; display: grid; gap: .7rem; padding: 1rem; background: var(--ink); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 15px 30px var(--shadow); }
 .mobile-menu-divider { border-top: 1px solid var(--line); }
-.btn { display: inline-block; border: 0; border-radius: 12px; padding: .78rem 1.1rem; font-weight: 700; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.btn { display: inline-block; border: 0; border-radius: 12px; padding: .78rem 1.1rem; font-weight: 700; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 20px rgba(10, 6, 4, .45); text-decoration: none; }
 .btn-primary { background: linear-gradient(135deg, var(--caramel), #e6a14d); color: #2a1308; }
+.btn-primary:hover, .btn-primary:focus-visible { color: #2a1308; filter: brightness(1.2); text-decoration: none; }
 .btn-secondary { background: rgba(245, 239, 229, .12); color: var(--foam); border: 1px solid rgba(245, 239, 229, .35); }
 .about-copy { padding: 2rem; background: linear-gradient(150deg, rgba(18, 11, 7, .3), rgba(18, 11, 7, .85)); border-radius: 24px; border: 1px solid rgba(234, 216, 191, .2); overflow: hidden; box-shadow: 0 22px 40px rgba(0, 0, 0, .35); }
 .link-row { margin-top: 1rem; display: flex; gap: .6rem; flex-wrap: wrap; }

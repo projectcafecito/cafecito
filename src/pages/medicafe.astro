@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const waitlistUrl = 'https://tally.so/r/VLK2xy';
+const steps = [
+  { number: '01', label: 'Source intake', title: 'Bring the source into view', copy: 'Keep uploaded records and extracted observations together so an operator can review where claim details came from.' },
+  { number: '02', label: 'Human review', title: 'Resolve what is uncertain', copy: 'Review patient and encounter matches, record service corrections, and make the reason for each decision visible.' },
+  { number: '03', label: 'Claim approval', title: 'Approve a defined claim', copy: 'Select service lines and approve a versioned claim payload. Later changes surface as blockers instead of silently changing approved work.' },
+];
+const principles = [
+  { title: 'Know what changed', copy: 'Corrections, exclusions, reinstatements, reasons, and approvals stay attached to the work they affect.' },
+  { title: 'Know what was sent', copy: 'The product foundation preserves the exact approved claim payload and its dispatch intent.' },
+  { title: 'Know what remains unresolved', copy: 'Attempt history and receiver observations make uncertain delivery outcomes explicit for operator reconciliation.' },
+];
+const medicafeCapabilities = [
+  'CSV and DOCX source intake with retained source bytes and extracted observations, demonstrated with synthetic data',
+  'Operator review and explicit resolution of uncertain patient and encounter matches within an organization',
+  'Recorded service corrections, exclusions, reinstatements, reasons, and evidence',
+  'Ordered service-line selection and versioned claim assembly with an immutable approved claim payload',
+  'Simulated dispatch with persisted payload bytes, attempt history, independent receiver observations, and explicit reconciliation of uncertain outcomes',
+];
+const medicafeSchema = {
+  '@type': 'SoftwareApplication',
+  '@id': 'https://cafecito.tech/medicafe/#software',
+  name: 'MediCafe',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  description: 'A limited-pilot medical billing back-office platform designed to reduce claim rework through error review, traceable processing, and operator-approved claims.',
+  url: 'https://cafecito.tech/medicafe/',
+  provider: { '@id': 'https://cafecito.tech/#organization' },
+  featureList: medicafeCapabilities,
+};
+---
+
+<BaseLayout
+  title="MediCafe | A smarter medical billing back office"
+  description="MediCafe is a limited-pilot medical billing back office designed to reduce claim busywork with error review, traceable processing, and revenue-cycle follow-up. Join the waitlist."
+  image="https://cafecito.tech/images/medicafe.png"
+  keywords="MediCafe, medical billing back office, intelligent error correction, claim processing, billing traceability, revenue cycle management"
+  productCapabilities={medicafeCapabilities}
+  jsonLd={medicafeSchema}
+>
+  <Nav />
+  <main>
+    <header class="medicafe-hero">
+      <div class="container medicafe-hero-grid">
+        <div class="medicafe-hero-copy">
+          <p class="medicafe-kicker"><span class="medicafe-kicker-dot" aria-hidden="true"></span> MediCafe · Limited pilot</p>
+          <h1>Take the busywork out of <span>medical billing.</span></h1>
+          <p class="medicafe-lede">MediCafe is the intelligent billing back office we are building for medical practices. It aims to catch and correct claim errors, lighten filing and follow-up, and trace every step—so your team spends less time on repetitive work and more time pursuing payment for care delivered.</p>
+          <div class="medicafe-hero-actions">
+            <a class="medicafe-button" href={waitlistUrl} data-tally-open="VLK2xy" data-tally-layout="modal" data-tally-width="600">Join the waitlist <span aria-hidden="true">↗</span></a>
+            <a class="medicafe-text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="medicafe-hero-note">Access is limited while the product is in pilot.</p>
+        </div>
+        <div class="medicafe-visual">
+          <div class="medicafe-visual-top">
+            <img src="/images/medicafe.png" alt="" width="52" height="52" />
+            <div><strong>MediCafe</strong><span>Claim journey</span></div>
+            <span class="medicafe-visual-status">Illustrative workflow</span>
+          </div>
+          <ol class="medicafe-journey">
+            <li><span class="medicafe-journey-icon" aria-hidden="true">01</span><div><strong>Source intake</strong><small>Observations kept with the record</small></div><span class="medicafe-journey-state">Recorded</span></li>
+            <li><span class="medicafe-journey-icon" aria-hidden="true">02</span><div><strong>Identity &amp; service review</strong><small>Uncertainty resolved by an operator</small></div><span class="medicafe-journey-state medicafe-journey-state--review">Review</span></li>
+            <li><span class="medicafe-journey-icon" aria-hidden="true">03</span><div><strong>Claim approval</strong><small>Versioned payload, explicit approval</small></div><span class="medicafe-journey-state">Defined</span></li>
+            <li><span class="medicafe-journey-icon" aria-hidden="true">04</span><div><strong>Delivery outcome</strong><small>Attempts and observations visible</small></div><span class="medicafe-journey-state medicafe-journey-state--muted">Tracked</span></li>
+          </ol>
+          <p class="medicafe-visual-caption">A view of the product approach, not a live application screen.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="medicafe-intro" aria-labelledby="medicafe-intro-title">
+      <div class="container medicafe-intro-grid">
+        <div>
+          <p class="medicafe-section-label">The problem it addresses</p>
+          <h2 id="medicafe-intro-title">Your billing team has enough to chase.</h2>
+        </div>
+        <p>Finding errors, correcting service details, preparing claims, and tracing what happened afterward can consume hours of back-office time. MediCafe is being built to bring that work into one coordinated flow, with automation for repeatable tasks and people in control of consequential decisions.</p>
+      </div>
+    </section>
+
+    <section class="medicafe-section" id="how-it-works" aria-labelledby="medicafe-workflow-title">
+      <div class="container">
+        <div class="medicafe-section-heading">
+          <div>
+            <p class="medicafe-section-label">How it works today</p>
+            <h2 id="medicafe-workflow-title">Prepare cleaner claims with a trail you can follow.</h2>
+          </div>
+        </div>
+        <div class="medicafe-workflow-grid">
+          {steps.map((step) => (
+            <article class="medicafe-step">
+              <div class="medicafe-step-top"><span>{step.number}</span><span class="medicafe-step-label">{step.label}</span></div>
+              <h3>{step.title}</h3><p>{step.copy}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="medicafe-section medicafe-section--warm" aria-labelledby="medicafe-principles-title">
+      <div class="container medicafe-principles-grid">
+        <div class="medicafe-principles-intro">
+          <p class="medicafe-section-label">Built for accountable work</p>
+          <h2 id="medicafe-principles-title">Catch rework early. Keep the full trail.</h2>
+          <p>The documented foundation keeps corrections, approvals, and delivery observations together, making it easier to see what happened and what still needs attention.</p>
+        </div>
+        <div class="medicafe-principles-list">
+          {principles.map((item, index) => (
+            <article class="medicafe-principle"><span class="medicafe-principle-number">0{index + 1}</span><div><h3>{item.title}</h3><p>{item.copy}</p></div></article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="medicafe-section medicafe-direction" aria-labelledby="medicafe-direction-title">
+      <div class="container medicafe-direction-grid">
+        <div>
+          <p class="medicafe-section-label">Where we are headed</p>
+          <h2 id="medicafe-direction-title">A billing back office that carries more of the load.</h2>
+        </div>
+        <div>
+          <p>MediCafe's broader goal is to connect intelligent error correction, automated filing, claim-status tracing, and revenue-cycle follow-up in one service. That means fewer manual handoffs and a clearer path to the payments your practice has earned.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicafe-section medicafe-faq" aria-labelledby="medicafe-faq-title">
+      <div class="container medicafe-faq-grid">
+        <div><p class="medicafe-section-label">Good to know</p><h2 id="medicafe-faq-title">Where MediCafe stands today.</h2></div>
+        <div class="medicafe-faq-list">
+          <details><summary>Is MediCafe available to everyone?</summary><p>No. MediCafe is in a limited pilot. Join the waitlist to express interest in access.</p></details>
+          <details><summary>Does the public product foundation show live payer submission?</summary><p>No. Its documented delivery workflow uses synthetic data and simulated dispatch. Live payer connectivity and production claim submission are not established by that work.</p></details>
+          <details><summary>Who is MediCafe for?</summary><p>It is being shaped for clinic billing teams and operators who need clear review, approval, and follow-up across claim work.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicafe-final" aria-labelledby="medicafe-final-title">
+      <div class="container medicafe-final-inner">
+        <div><p class="medicafe-section-label">Interested in the pilot?</p><h2 id="medicafe-final-title">Give your billing team a lighter path to payment.</h2><p>Join the waitlist to hear about MediCafe pilot access.</p></div>
+        <a class="medicafe-button" href={waitlistUrl} data-tally-open="VLK2xy" data-tally-layout="modal" data-tally-width="600">Join the waitlist <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script is:inline async src="https://tally.so/widgets/embed.js"></script>
+
+<style>
+  .medicafe-hero { position: relative; overflow: hidden; padding: clamp(4rem, 8vw, 7rem) 0 5rem; background: radial-gradient(circle at 78% 36%, rgba(104, 218, 211, .13), transparent 28rem), radial-gradient(circle at 8% 0%, rgba(193, 129, 59, .14), transparent 24rem), linear-gradient(145deg, #120b07 4%, #2e160b 100%); border-bottom: 1px solid var(--line); }
+  .medicafe-hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .28; background-image: linear-gradient(rgba(234, 216, 191, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(234, 216, 191, .08) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(90deg, transparent, black); }
+  .medicafe-hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
+  .medicafe-kicker, .medicafe-section-label { margin: 0 0 1.15rem; color: var(--mint); font-size: .76rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+  .medicafe-kicker { display: flex; align-items: center; gap: .65rem; }
+  .medicafe-kicker-dot { width: .55rem; height: .55rem; flex: none; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 5px rgba(104, 218, 211, .12); }
+  .medicafe-hero h1 { max-width: 12ch; margin: 0; font-size: clamp(2.8rem, 5.9vw, 5.4rem); line-height: 1.02; letter-spacing: -.045em; }
+  .medicafe-hero h1 span { color: var(--mint); }
+  .medicafe-lede { max-width: 54ch; margin: 1.65rem 0 0; color: #e4d7c8; font-size: clamp(1.05rem, 1.35vw, 1.2rem); line-height: 1.65; }
+  .medicafe-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.15rem 1.6rem; margin-top: 2rem; }
+  .medicafe-button { display: inline-flex; align-items: center; justify-content: center; gap: .9rem; min-height: 50px; padding: .75rem 1.3rem; border-radius: 12px; background: var(--mint); color: #10201d; font-size: .97rem; font-weight: 800; box-shadow: 0 12px 32px rgba(39, 188, 177, .16); transition: background .2s ease, transform .2s ease; }
+  .medicafe-button:hover { color: #10201d; background: #9cece7; text-decoration: none; transform: translateY(-2px); }
+  .medicafe-button:focus-visible, .medicafe-text-link:focus-visible, .medicafe-faq summary:focus-visible { outline: 3px solid var(--mint); outline-offset: 4px; }
+  .medicafe-text-link { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: var(--foam); font-weight: 700; border-bottom: 1px solid rgba(245, 239, 229, .5); }
+  .medicafe-text-link:hover { color: var(--mint); text-decoration: none; border-color: var(--mint); }
+  .medicafe-hero-note { margin: 1rem 0 0; color: #c7b9a8; font-size: .86rem; }
+  .medicafe-visual { min-width: 0; padding: 1.1rem; border: 1px solid rgba(234, 216, 191, .28); border-radius: 24px; background: linear-gradient(155deg, rgba(50, 34, 25, .97), rgba(21, 17, 15, .98)); box-shadow: 0 28px 70px rgba(0, 0, 0, .38), 0 0 0 8px rgba(245, 239, 229, .025); }
+  .medicafe-visual-top { display: flex; align-items: center; gap: .75rem; padding: .2rem .2rem 1rem; border-bottom: 1px solid rgba(234, 216, 191, .16); }
+  .medicafe-visual-top img { width: 52px; height: 52px; object-fit: cover; border-radius: 10px; }
+  .medicafe-visual-top div { display: grid; gap: .15rem; }
+  .medicafe-visual-top strong { font-size: 1rem; }
+  .medicafe-visual-top div span { color: #bfae9d; font-size: .8rem; }
+  .medicafe-visual-status { margin-left: auto; padding: .3rem .55rem; border: 1px solid rgba(104, 218, 211, .34); border-radius: 999px; color: #9cece7; font-size: .7rem; white-space: nowrap; }
+  .medicafe-journey { display: grid; gap: .55rem; margin: 1rem 0 .75rem; padding: 0; list-style: none; }
+  .medicafe-journey li { display: flex; align-items: center; min-width: 0; gap: .7rem; padding: .85rem .8rem; border: 1px solid rgba(234, 216, 191, .11); border-radius: 13px; background: rgba(245, 239, 229, .045); }
+  .medicafe-journey-icon { display: grid; place-items: center; width: 32px; height: 32px; flex: none; border-radius: 9px; background: rgba(104, 218, 211, .13); color: var(--mint); font-size: .75rem; font-weight: 800; }
+  .medicafe-journey li div { display: grid; gap: .2rem; min-width: 0; }
+  .medicafe-journey li strong { font-size: .88rem; }
+  .medicafe-journey li small { color: #baa996; font-size: .75rem; }
+  .medicafe-journey-state { margin-left: auto; color: #9cece7; font-size: .72rem; }
+  .medicafe-journey-state--review { color: #e8bb7d; }
+  .medicafe-journey-state--muted { color: #c6b6a4; }
+  .medicafe-visual-caption { margin: .5rem .3rem .1rem; color: #bfae9d; font-size: .72rem; line-height: 1.4; }
+  .medicafe-intro { padding: 3.5rem 0; border-bottom: 1px solid var(--line); }
+  .medicafe-intro-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+  .medicafe-intro-grid .medicafe-section-label { padding-top: .45rem; }
+  .medicafe-intro h2, .medicafe-section h2, .medicafe-final h2 { max-width: 19ch; font-size: clamp(2rem, 3.5vw, 3.25rem); letter-spacing: -.025em; line-height: 1.14; }
+  .medicafe-intro p:last-child { max-width: 67ch; margin: 1.3rem 0 0; color: #ccbeb0; line-height: 1.7; }
+  .medicafe-section { padding: clamp(4rem, 7vw, 6rem) 0; scroll-margin-top: 5rem; }
+  .medicafe-section-heading { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 2rem; margin-bottom: 2rem; }
+  .medicafe-section-heading > p { max-width: 55ch; margin: 0 0 .2rem; color: #cbbcad; line-height: 1.65; }
+  .medicafe-section-heading > p a { color: var(--mint); text-decoration: underline; text-underline-offset: .18em; }
+  .medicafe-workflow-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .medicafe-step { min-width: 0; min-height: 15rem; padding: 1.4rem; border: 1px solid rgba(234, 216, 191, .2); border-radius: 18px; background: linear-gradient(150deg, rgba(64, 39, 25, .88), rgba(31, 21, 17, .9)); }
+  .medicafe-step-top { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: 2.6rem; }
+  .medicafe-step-top > span:first-child { color: var(--mint); font-size: .8rem; font-weight: 800; }
+  .medicafe-step-label { padding: .3rem .55rem; border: 1px solid rgba(234, 216, 191, .2); border-radius: 999px; color: #dac7b4; font-size: .69rem; }
+  .medicafe-step h3 { margin-bottom: .7rem; color: var(--foam); font-size: 1.25rem; letter-spacing: -.015em; }
+  .medicafe-step p { margin: 0; color: #cfbead; font-size: .93rem; line-height: 1.65; }
+  .medicafe-section--warm { background: linear-gradient(135deg, #26170f, #382214); border-block: 1px solid var(--line); }
+  .medicafe-principles-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(2rem, 7vw, 7rem); }
+  .medicafe-principles-intro p:last-child { max-width: 44ch; margin: 1.3rem 0 0; color: #d2c2b2; line-height: 1.7; }
+  .medicafe-principles-list { border-top: 1px solid rgba(234, 216, 191, .23); }
+  .medicafe-principle { display: grid; grid-template-columns: 2rem 1fr; gap: .8rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(234, 216, 191, .23); }
+  .medicafe-principle-number { color: var(--mint); font-size: .83rem; font-weight: 800; }
+  .medicafe-principle h3 { font-size: 1.12rem; }
+  .medicafe-principle p { margin: .45rem 0 0; color: #d2c2b2; font-size: .93rem; line-height: 1.6; }
+  .medicafe-direction { border-bottom: 1px solid var(--line); background: radial-gradient(circle at 5% 100%, rgba(104, 218, 211, .08), transparent 26rem); }
+  .medicafe-direction-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(2rem, 7vw, 7rem); }
+  .medicafe-direction-grid > div:last-child { padding-top: 1.5rem; }
+  .medicafe-direction-grid > div:last-child p { max-width: 58ch; margin: 0; color: #d8cbbd; line-height: 1.75; }
+  .medicafe-direction-grid .medicafe-direction-note { margin-top: 1.4rem; padding-left: 1rem; border-left: 2px solid var(--mint); color: #bfae9d; font-size: .91rem; }
+  .medicafe-faq-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(2rem, 7vw, 7rem); }
+  .medicafe-faq-list { border-top: 1px solid rgba(234, 216, 191, .2); }
+  .medicafe-faq details { border-bottom: 1px solid rgba(234, 216, 191, .2); }
+  .medicafe-faq summary { position: relative; padding: 1.2rem 2rem 1.2rem 0; cursor: pointer; list-style: none; font-weight: 800; line-height: 1.45; }
+  .medicafe-faq summary::-webkit-details-marker { display: none; }
+  .medicafe-faq summary::after { content: '+'; position: absolute; right: .3rem; top: 1rem; color: var(--mint); font-size: 1.3rem; }
+  .medicafe-faq details[open] summary::after { content: '−'; }
+  .medicafe-faq details p { margin: 0 2rem 1.3rem 0; color: #cbbcad; line-height: 1.7; }
+  .medicafe-final { padding: 3.5rem 0; border-block: 1px solid rgba(104, 218, 211, .17); background: radial-gradient(circle at 92% 50%, rgba(104, 218, 211, .15), transparent 25rem), #1d211c; }
+  .medicafe-final-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .medicafe-final h2 { max-width: 23ch; }
+  .medicafe-final p:last-child { margin: 1rem 0 0; color: #d0d5cb; }
+  .medicafe-final .medicafe-button { flex: none; }
+  @media (max-width: 900px) {
+    .medicafe-hero-grid, .medicafe-principles-grid, .medicafe-direction-grid, .medicafe-faq-grid { grid-template-columns: 1fr; }
+    .medicafe-direction-grid > div:last-child { padding-top: 0; }
+    .medicafe-hero h1 { max-width: 15ch; }
+    .medicafe-visual { max-width: 600px; }
+    .medicafe-section-heading { display: block; }
+    .medicafe-section-heading > p { max-width: 55ch; margin-top: 1.1rem; }
+  }
+  @media (max-width: 680px) {
+    .medicafe-hero { padding: 3.3rem 0 3rem; }
+    .medicafe-hero-grid { gap: 2.5rem; }
+    .medicafe-hero h1 { font-size: clamp(2.65rem, 11vw, 4rem); }
+    .medicafe-intro-grid, .medicafe-workflow-grid { grid-template-columns: 1fr; }
+    .medicafe-intro-grid { gap: .4rem; }
+    .medicafe-intro-grid .medicafe-section-label { padding: 0; }
+    .medicafe-step { min-height: 0; }
+    .medicafe-step-top { margin-bottom: 1.6rem; }
+    .medicafe-final-inner { display: block; }
+    .medicafe-final .medicafe-button { margin-top: 1.8rem; }
+  }
+  @media (max-width: 430px) {
+    .medicafe-visual { padding: .75rem; }
+    .medicafe-visual-status, .medicafe-journey-state { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .medicafe-button { transition: none; } }
+</style>
